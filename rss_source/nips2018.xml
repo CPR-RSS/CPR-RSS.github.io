@@ -464,7 +464,7 @@ $L_{\infty}$ attack with $\epsilon = 0.1$ with an average runtime of 133 seconds
     </item>
     
     <item>
-        <title>Regularizing by the Variance of the Activations' Sample-Variances</title>
+        <title>Regularizing by the Variance of the Activations&apos; Sample-Variances</title>
         <link>http://papers.nips.cc/paper/7481-regularizing-by-the-variance-of-the-activations-sample-variances.pdf</link>
         <description>Normalization techniques play an important role in supporting efficient and often more effective training of deep neural networks. While conventional methods explicitly normalize the activations, we suggest to add a loss term instead. This new loss term encourages the variance of the activations to be stable and not vary from one random mini-batch to the next. As we prove, this encourages the activations to be distributed around a few distinct modes. We also show that if the inputs are from a mixture of two Gaussians, the new loss would either join the two together, or separate between them optimally in the LDA sense, depending on the prior probabilities. Finally, we are able to link the new regularization term to the batchnorm method, which provides it with a regularization perspective. Our experiments demonstrate an improvement in accuracy over the batchnorm technique for both CNNs and fully connected networks.</description>
     </item>
@@ -1185,7 +1185,7 @@ observe that it provides significant performance improvements on several domain 
     </item>
     
     <item>
-        <title>Where Do You Think You're Going?: Inferring Beliefs about Dynamics from Behavior</title>
+        <title>Where Do You Think You&apos;re Going?: Inferring Beliefs about Dynamics from Behavior</title>
         <link>http://papers.nips.cc/paper/7419-where-do-you-think-youre-going-inferring-beliefs-about-dynamics-from-behavior.pdf</link>
         <description>Inferring intent from observed behavior has been studied extensively within the frameworks of Bayesian inverse planning and inverse reinforcement learning. These methods infer a goal or reward function that best explains the actions of the observed agent, typically a human demonstrator. Another agent can use this inferred intent to predict, imitate, or assist the human user. However, a central assumption in inverse reinforcement learning is that the demonstrator is close to optimal. While models of suboptimal behavior exist, they typically assume that suboptimal actions are the result of some type of random noise or a known cognitive bias, like temporal inconsistency. In this paper, we take an alternative approach, and model suboptimal behavior as the result of internal model misspecification: the reason that user actions might deviate from near-optimal actions is that the user has an incorrect set of beliefs about the rules -- the dynamics -- governing how actions affect the environment. Our insight is that while demonstrated actions may be suboptimal in the real world, they may actually be near-optimal with respect to the user&apos;s internal model of the dynamics. By estimating these internal beliefs from observed behavior, we arrive at a new method for inferring intent. We demonstrate in simulation and in a user study with 12 participants that this approach enables us to more accurately model human intent, and can be used in a variety of applications, including offering assistance in a shared autonomy framework and inferring human preferences.</description>
     </item>
@@ -1213,7 +1213,7 @@ Our upper bounds are obtained by privatizing non-private estimators for these pr
     </item>
     
     <item>
-        <title>Answerer in Questioner's Mind: Information Theoretic Approach to Goal-Oriented Visual Dialog (Spotlight)</title>
+        <title>Answerer in Questioner&apos;s Mind: Information Theoretic Approach to Goal-Oriented Visual Dialog (Spotlight)</title>
         <link>http://papers.nips.cc/paper/7524-answerer-in-questioners-mind-information-theoretic-approach-to-goal-oriented-visual-dialog.pdf</link>
         <description>Goal-oriented dialog has been given attention due to its numerous applications in artificial intelligence.
 Goal-oriented dialogue tasks occur when a questioner asks an action-oriented question and an answerer responds with the intent of letting the questioner know a correct action to take. 
@@ -2020,7 +2020,7 @@ On the generalization task of synthesizing notes for pairs of pitch and instrume
     </item>
     
     <item>
-        <title>Answerer in Questioner's Mind: Information Theoretic Approach to Goal-Oriented Visual Dialog</title>
+        <title>Answerer in Questioner&apos;s Mind: Information Theoretic Approach to Goal-Oriented Visual Dialog</title>
         <link>http://papers.nips.cc/paper/7524-answerer-in-questioners-mind-information-theoretic-approach-to-goal-oriented-visual-dialog.pdf</link>
         <description>Goal-oriented dialog has been given attention due to its numerous applications in artificial intelligence.
 Goal-oriented dialogue tasks occur when a questioner asks an action-oriented question and an answerer responds with the intent of letting the questioner know a correct action to take. 
@@ -2313,7 +2313,7 @@ obtains high performance across a variety of input conditions.</description>
     </item>
     
     <item>
-        <title>Does mitigating ML's impact disparity require treatment disparity?</title>
+        <title>Does mitigating ML&apos;s impact disparity require treatment disparity?</title>
         <link>http://papers.nips.cc/paper/8035-does-mitigating-mls-impact-disparity-require-treatment-disparity.pdf</link>
         <description>Following precedent in employment discrimination law, two notions of disparity are widely-discussed in papers on fairness and ML. Algorithms exhibit treatment disparity if they formally treat members of protected subgroups differently;
 algorithms exhibit impact disparity when outcomes differ across subgroups (even unintentionally). Naturally, we can achieve impact parity through purposeful treatment disparity. One line of papers aims to reconcile the two parities proposing disparate learning processes (DLPs). Here, the sensitive feature is used during training but a group-blind classifier is produced. In this paper, we show that: (i) when sensitive and (nominally) nonsensitive features are correlated, DLPs will indirectly implement treatment disparity, undermining the policy desiderata they are designed to address; (ii) when group membership is partly revealed by other features, DLPs induce within-class discrimination; and (iii) in general, DLPs provide suboptimal trade-offs between accuracy and impact parity. Experimental results on several real-world datasets highlight the practical consequences of applying DLPs.</description>
@@ -2485,7 +2485,7 @@ In this paper, we introduce a new technique for local differential privacy that 
     </item>
     
     <item>
-        <title>Data-Driven Clustering via Parameterized Lloyd's Families</title>
+        <title>Data-Driven Clustering via Parameterized Lloyd&apos;s Families</title>
         <link>http://papers.nips.cc/paper/8263-data-driven-clustering-via-parameterized-lloyds-families.pdf</link>
         <description>Algorithms for clustering points in metric spaces is a long-studied area of research. Clustering has seen a multitude of work both theoretically, in understanding the approximation guarantees possible for many objective functions such as k-median and k-means clustering, and experimentally, in finding the fastest algorithms and seeding procedures for Lloyd&apos;s algorithm. The performance of a given clustering algorithm depends on the specific application at hand, and this may not be known up front. For example, a &quot;typical instance&quot; may vary depending on the application, and different clustering heuristics perform differently depending on the instance.
 
@@ -2671,7 +2671,7 @@ to 1/2e in O(log^2 n) adaptive rounds, where n is the size of the ground set. Th
     </item>
     
     <item>
-        <title>Rest-Katyusha: Exploiting the Solution's Structure via Scheduled Restart Schemes</title>
+        <title>Rest-Katyusha: Exploiting the Solution&apos;s Structure via Scheduled Restart Schemes</title>
         <link>http://papers.nips.cc/paper/7325-rest-katyusha-exploiting-the-solutions-structure-via-scheduled-restart-schemes.pdf</link>
         <description>We propose a structure-adaptive variant of the state-of-the-art stochastic variance-reduced gradient algorithm Katyusha for  regularized empirical risk minimization. The proposed method is able to exploit the intrinsic low-dimensional structure of the solution, such as sparsity or low rank which is enforced by a non-smooth regularization, to achieve even faster convergence rate. This provable algorithmic improvement is done by restarting the Katyusha algorithm according to restricted strong-convexity constants. We demonstrate the effectiveness of our approach via numerical experiments.</description>
     </item>
@@ -3487,7 +3487,7 @@ tions, leading to issues such as introduction of irrelevant semantics, lack of d
     </item>
     
     <item>
-        <title>Adversarial Text Generation via Feature-Mover's Distance</title>
+        <title>Adversarial Text Generation via Feature-Mover&apos;s Distance</title>
         <link>http://papers.nips.cc/paper/7717-adversarial-text-generation-via-feature-movers-distance.pdf</link>
         <description>Generative adversarial networks (GANs) have achieved significant success in generating real-valued data. However, the discrete nature of text hinders the application of GAN to text-generation tasks. Instead of using the standard GAN objective, we propose to improve text-generation GAN via a novel approach inspired by optimal transport. Specifically, we consider matching the latent feature distributions of real and synthetic sentences using a novel metric, termed the feature-mover&apos;s distance (FMD). This formulation leads to a highly discriminative critic and easy-to-optimize objective, overcoming the mode-collapsing and brittle-training problems in existing methods. Extensive experiments are conducted on a variety of tasks to evaluate the proposed model empirically, including unconditional text generation, style transfer from non-parallel text, and unsupervised cipher cracking. The proposed model yields superior performance, demonstrating wide applicability and effectiveness.</description>
     </item>
@@ -4660,7 +4660,7 @@ In this paper, we present the first domain-independent transfer algorithm for MD
     </item>
     
     <item>
-        <title>Occam's razor is insufficient to infer the preferences of irrational agents</title>
+        <title>Occam&apos;s razor is insufficient to infer the preferences of irrational agents</title>
         <link>http://papers.nips.cc/paper/7803-occams-razor-is-insufficient-to-infer-the-preferences-of-irrational-agents.pdf</link>
         <description>Inverse reinforcement learning (IRL) attempts to infer human rewards or preferences from observed behavior. Since human planning systematically deviates from rationality, several approaches have been tried to account for specific human shortcomings. 
 However, the general problem of inferring the reward function of an agent of unknown rationality has received little attention.
@@ -4924,7 +4924,7 @@ In this paper, we propose a double averaging scheme, where each agent iterativel
     </item>
     
     <item>
-        <title>Learning Others' Intentional Models in Multi-Agent Settings Using Interactive POMDPs</title>
+        <title>Learning Others&apos; Intentional Models in Multi-Agent Settings Using Interactive POMDPs</title>
         <link>http://papers.nips.cc/paper/7806-learning-others-intentional-models-in-multi-agent-settings-using-interactive-pomdps.pdf</link>
         <description>Interactive partially observable Markov decision processes (I-POMDPs) provide a principled framework for planning and acting in a partially observable, stochastic and multi-agent environment. It extends POMDPs to multi-agent settings by including models of other agents in the state space and forming a hierarchical belief structure. In order to predict other agents&apos; actions using I-POMDPs, we propose an approach that effectively uses Bayesian inference and sequential Monte Carlo sampling to learn others&apos; intentional models which ascribe to them beliefs, preferences and rationality in action selection. Empirical results show that our algorithm accurately learns models of the other agent and has superior performance than methods that use subintentional models. Our approach serves as a generalized Bayesian learning algorithm that learns other agents&apos; beliefs, strategy levels, and transition, observation and reward functions. It also effectively mitigates the belief space complexity due to the nested belief hierarchy.</description>
     </item>
@@ -6297,7 +6297,7 @@ As an example application, we show that the distributed geometric median problem
     </item>
     
     <item>
-        <title>Limited Memory Kelley's Method Converges for Composite Convex and Submodular Objectives</title>
+        <title>Limited Memory Kelley&apos;s Method Converges for Composite Convex and Submodular Objectives</title>
         <link>http://papers.nips.cc/paper/7694-limited-memory-kelleys-method-converges-for-composite-convex-and-submodular-objectives.pdf</link>
         <description>The original simplicial method (OSM), a variant of the classic Kelley’s cutting plane method, has been shown to converge to the minimizer of a composite convex and submodular objective, though no rate of convergence for this method was known. Moreover, OSM is required to solve subproblems in each iteration whose size grows linearly in the number of iterations.  We propose a limited memory version of Kelley’s method (L-KM) and of OSM that requires limited memory (at most n+ 1 constraints for an n-dimensional problem) independent of the iteration. We prove convergence for L-KM when the convex part of the objective g is strongly convex and show it converges linearly when g is also smooth. Our analysis relies on duality between minimization of the composite convex and submodular objective and minimization of a convex function over the submodular base polytope.  We introduce a limited memory version, L-FCFW, of the Fully-Corrective Frank-Wolfe (FCFW) method with approximate correction, to solve the dual problem. We show that L-FCFW and L-KM are dual algorithms that produce the same sequence of iterates; hence both converge linearly (when g is smooth and strongly convex) and with limited memory.  We propose L-KM to minimize composite convex and submodular objectives; however, our results on L-FCFW hold for general polytopes and may be of independent interest.</description>
     </item>
@@ -6321,7 +6321,7 @@ As an example application, we show that the distributed geometric median problem
     </item>
     
     <item>
-        <title>Gen-Oja: Simple & Efficient Algorithm for Streaming Generalized Eigenvector Computation</title>
+        <title>Gen-Oja: Simple &amp; Efficient Algorithm for Streaming Generalized Eigenvector Computation</title>
         <link>http://papers.nips.cc/paper/7933-gen-oja-simple-efficient-algorithm-for-streaming-generalized-eigenvector-computation.pdf</link>
         <description>In this paper, we study the problems of principle Generalized Eigenvector computation and Canonical Correlation Analysis in the stochastic setting. We propose a simple and efficient algorithm for these problems. We prove the global convergence of our algorithm, borrowing ideas from the theory of fast-mixing Markov chains and two-Time-Scale Stochastic Approximation, showing that it achieves the optimal rate of convergence. In the process, we develop tools for understanding stochastic processes with Markovian noise which might be of independent interest.</description>
     </item>
