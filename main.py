@@ -35,6 +35,26 @@ def generate_web_page(cooked_paper_list, args):
         page += template % (paper[0], ', '.join(paper[3]), paper[2], paper[2], paper[1])
     return page + "</body></html>"
 
+def generate_rss_page(cooked_paper_list, args):
+    page = """
+<?xml version="1.0" encoding="utf8"?>
+<rss version="2.0">
+<channel>
+    """
+
+    template = """
+<item>
+<title>%s</title>
+<link>%s</link>
+<description>%s</description>
+</item>
+    """
+    for paper in cooked_paper_list:
+        page += template % (paper[0], paper[1], paper[2])
+    return page + "</channel>"
+
+
+
 def main(args):
     try:
         parser = importlib.import_module("conference_template.%s" % args.conference).PaperListParser(args)
@@ -45,11 +65,11 @@ def main(args):
     paper_list = parse_paper_list(parser, args)
     parser.cook_paper(paper_list[0])
     cooked_paper_list = []
-    for paper in tqdm.tqdm(paper_list):
+    for paper in tqdm.tqdm(paper_list[:10]):
         cooked_paper_list.append(parser.cook_paper(paper))
     
-    web_page = generate_web_page(cooked_paper_list, args)
-    with open('rss_source/' + args.conference + '.html', 'w', encoding='utf8') as f:
+    web_page = generate_rss_page(cooked_paper_list, args)
+    with open('rss_source/' + args.conference + '.rss', 'w', encoding='utf8') as f:
         f.write(web_page)
 
 if __name__ == "__main__":

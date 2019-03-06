@@ -1,0 +1,66 @@
+
+<?xml version="1.0" encoding="utf8"?>
+<rss version="2.0">
+<channel>
+    
+<item>
+<title>On Neuronal Capacity (Oral)</title>
+<link>We define the capacity of a learning machine to be the logarithm of the number (or volume) of the functions it can implement. We review known results, and derive new results, estimating the capacity of several neuronal models:  linear and polynomial threshold gates, linear and polynomial threshold gates with constrained weights (binary weights, positive weights), and ReLU neurons. We also derive capacity estimates and bounds for fully recurrent networks and layered feedforward networks.</link>
+<description>http://papers.nips.cc/paper/7999-on-neuronal-capacity.pdf</description>
+</item>
+    
+<item>
+<title>On the Dimensionality of Word Embedding (Oral)</title>
+<link>In this paper, we provide a theoretical understanding of word embedding and its dimensionality. Motivated by the unitary-invariance of word embedding, we propose the Pairwise Inner Product (PIP) loss, a novel metric on the dissimilarity between word embeddings. Using techniques from matrix perturbation theory, we reveal a fundamental bias-variance trade-off in dimensionality selection for word embeddings. This bias-variance trade-off sheds light on many empirical observations which were previously unexplained, for example the existence of an optimal dimensionality. Moreover, new insights and discoveries, like when and how word embeddings are robust to over-fitting, are revealed. By optimizing over the bias-variance trade-off of the PIP loss, we can explicitly answer the open question of dimensionality selection for word embedding.</link>
+<description>http://papers.nips.cc/paper/7368-on-the-dimensionality-of-word-embedding.pdf</description>
+</item>
+    
+<item>
+<title>Phase Retrieval Under a Generative Prior (Oral)</title>
+<link>We introduce a novel deep-learning inspired formulation of the \textit{phase retrieval problem}, which asks to recover a signal $y_0 \in \R^n$ from $m$ quadratic observations, under structural assumptions on the underlying signal. As is common in many imaging problems, previous methodologies have considered natural signals as being sparse with respect to a known basis, resulting in the decision to enforce a generic sparsity prior. However, these methods for phase retrieval have encountered possibly fundamental limitations, as no computationally efficient algorithm for sparse phase retrieval has been proven to succeed with fewer than $O(k^2\log n)$ generic measurements, which is larger than the theoretical optimum of $O(k \log n)$. In this paper, we sidestep this issue by considering a prior that a natural signal is in the range of a generative neural network $G : \R^k \rightarrow \R^n$.  We introduce an empirical risk formulation that has favorable global geometry for gradient methods, as soon as $m = O(k)$, under the model of a multilayer fully-connected neural network with random weights.  Specifically, we show that there exists a descent direction outside of a small neighborhood around the true $k$-dimensional latent code and a negative multiple thereof.  This formulation for structured phase retrieval thus benefits from two effects: generative priors can more tightly represent natural signals than sparsity priors, and this empirical risk formulation can exploit those generative priors at an information theoretically optimal sample complexity, unlike for a sparsity prior. We corroborate these results with experiments showing that exploiting generative models in phase retrieval tasks outperforms both sparse and general phase retrieval methods.</link>
+<description>http://papers.nips.cc/paper/8127-phase-retrieval-under-a-generative-prior.pdf</description>
+</item>
+    
+<item>
+<title>Learning Overparameterized Neural Networks via Stochastic Gradient Descent on Structured Data (Spotlight)</title>
+<link>Neural networks have many successful applications, while much less theoretical understanding has been gained. Towards bridging this gap, we study the problem of learning a two-layer overparameterized ReLU neural network for multi-class classification via stochastic gradient descent (SGD) from random initialization. In the overparameterized setting, when the data comes from mixtures of well-separated distributions, we prove that SGD learns a network with a small generalization error, albeit the network has enough capacity to fit arbitrary labels. Furthermore, the analysis provides interesting insights into several aspects of learning neural networks and can be verified based on empirical studies on synthetic data and on the MNIST dataset.</link>
+<description>http://papers.nips.cc/paper/8038-learning-overparameterized-neural-networks-via-stochastic-gradient-descent-on-structured-data.pdf</description>
+</item>
+    
+<item>
+<title>Unsupervised Cross-Modal Alignment of Speech and Text Embedding Spaces (Spotlight)</title>
+<link>Recent research has shown that word embedding spaces learned from text corpora of different languages can be aligned without any parallel data supervision. Inspired by the success in unsupervised cross-lingual word embeddings, in this paper we target learning a cross-modal alignment between the embedding spaces of speech and text learned from corpora of their respective modalities in an unsupervised fashion. The proposed framework learns the individual speech and text embedding spaces, and attempts to align the two spaces via adversarial training, followed by a refinement procedure. We show how our framework could be used to perform the tasks of spoken word classification and translation, and the experimental results on these two tasks demonstrate that the performance of our unsupervised alignment approach is comparable to its supervised counterpart. Our framework is especially useful for developing automatic speech recognition (ASR) and speech-to-text translation systems for low- or zero-resource languages, which have little parallel audio-text data for training modern supervised ASR and speech-to-text translation models, but account for the majority of the languages spoken across the world.</link>
+<description>http://papers.nips.cc/paper/7965-unsupervised-cross-modal-alignment-of-speech-and-text-embedding-spaces.pdf</description>
+</item>
+    
+<item>
+<title>Global Geometry of Multichannel Sparse Blind Deconvolution on the Sphere (Spotlight)</title>
+<link>Multichannel blind deconvolution is the problem of recovering an unknown signal $f$ and multiple unknown channels $x_i$ from convolutional measurements $y_i=x_i \circledast f$ ($i=1,2,\dots,N$). We consider the case where the $x_i$'s are sparse, and convolution with $f$ is invertible. Our nonconvex optimization formulation solves for a filter $h$ on the unit sphere that produces sparse output $y_i\circledast h$. Under some technical assumptions, we show that all local minima of the objective function correspond to the inverse filter of $f$ up to an inherent sign and shift ambiguity, and all saddle points have strictly negative curvatures. This geometric structure allows successful recovery of $f$ and $x_i$ using a simple manifold gradient descent algorithm with random initialization. Our theoretical findings are complemented by numerical experiments, which demonstrate superior performance of the proposed approach over the previous methods.</link>
+<description>http://papers.nips.cc/paper/7390-global-geometry-of-multichannel-sparse-blind-deconvolution-on-the-sphere.pdf</description>
+</item>
+    
+<item>
+<title>Size-Noise Tradeoffs in Generative Networks (Spotlight)</title>
+<link>This paper investigates the ability of generative networks to convert their input noise distributions into other distributions. Firstly, we demonstrate a construction that allows ReLU networks to increase the dimensionality of their noise distribution by implementing a ``space-filling'' function based on iterated tent maps. We show this construction is optimal by analyzing the number of affine pieces in functions computed by multivariate ReLU networks. Secondly, we provide efficient ways (using polylog$(1/\epsilon)$ nodes) for networks to pass between univariate uniform and normal distributions, using a Taylor series approximation and a binary search gadget for computing function inverses. Lastly, we indicate how high dimensional distributions can be efficiently transformed into low dimensional distributions.</link>
+<description>http://papers.nips.cc/paper/7884-size-noise-tradeoffs-in-generative-networks.pdf</description>
+</item>
+    
+<item>
+<title>Diffusion Maps for Textual Network Embedding (Spotlight)</title>
+<link>Textual network embedding leverages rich text information associated with the network to learn low-dimensional vectorial representations of vertices.
+Rather than using typical natural language processing (NLP) approaches, recent research exploits the relationship of texts on the same edge to graphically embed text. However, these models neglect to measure the complete level of connectivity between any two texts in the graph. We present diffusion maps for textual network embedding (DMTE), integrating global structural information of the graph to capture the semantic relatedness between texts, with a diffusion-convolution operation applied on the text inputs. In addition, a new objective function is designed to efficiently preserve the high-order proximity using the graph diffusion. Experimental results show that the proposed approach outperforms state-of-the-art methods on the vertex-classification and link-prediction tasks.</link>
+<description>http://papers.nips.cc/paper/7986-diffusion-maps-for-textual-network-embedding.pdf</description>
+</item>
+    
+<item>
+<title>Theoretical Linear Convergence of Unfolded ISTA and Its Practical Weights and Thresholds (Spotlight)</title>
+<link>In recent years, unfolding iterative algorithms as neural networks has become an empirical success in solving sparse recovery problems. However, its theoretical understanding is still immature, which prevents us from fully utilizing the power of neural networks. In this work, we study unfolded ISTA (Iterative Shrinkage Thresholding Algorithm) for sparse signal recovery. We introduce a weight structure that is necessary for asymptotic convergence to the true sparse signal. With this structure, unfolded ISTA can attain a linear convergence, which is better than the sublinear convergence of ISTA/FISTA in general cases. Furthermore, we propose to incorporate thresholding in the network to perform support selection, which is easy to implement and able to boost the convergence rate both theoretically and empirically. Extensive simulations, including sparse vector recovery and a compressive sensing experiment on real image data, corroborate our theoretical results and demonstrate their practical usefulness. We have made our codes publicly available: https://github.com/xchen-tamu/linear-lista-cpss.</link>
+<description>http://papers.nips.cc/paper/8120-theoretical-linear-convergence-of-unfolded-ista-and-its-practical-weights-and-thresholds.pdf</description>
+</item>
+    
+<item>
+<title>Dendritic cortical microcircuits approximate the backpropagation algorithm (Oral)</title>
+<link>Deep learning has seen remarkable developments over the last years, many of them inspired by neuroscience. However, the main learning mechanism behind these advances – error backpropagation – appears to be at odds with neurobiology. Here, we introduce a multilayer neuronal network model with simplified dendritic compartments in which error-driven synaptic plasticity adapts the network towards a global desired output. In contrast to previous work our model does not require separate phases and synaptic learning is driven by local dendritic prediction errors continuously in time. Such errors originate at apical dendrites and occur due to a mismatch between predictive input from lateral interneurons and activity from actual top-down feedback. Through the use of simple dendritic compartments and different cell-types our model can represent both error and normal activity within a pyramidal neuron. We demonstrate the learning capabilities of the model in regression and classification tasks, and show analytically that it approximates the error backpropagation algorithm. Moreover, our framework is consistent with recent observations of learning between brain areas and the architecture of cortical microcircuits. Overall, we introduce a novel view of learning on dendritic cortical circuits and on how the brain may solve the long-standing synaptic credit assignment problem.</link>
+<description>http://papers.nips.cc/paper/8089-dendritic-cortical-microcircuits-approximate-the-backpropagation-algorithm.pdf</description>
+</item>
+    </channel>
