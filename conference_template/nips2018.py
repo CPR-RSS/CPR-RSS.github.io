@@ -53,4 +53,4 @@ class PaperListParser(BasePaperListParser):
             return (paper_info[0], abstract, pdf_url, author_list)
         except Exception as e:
             print(e)
-            return (paper_info[0], e, "", [])
+            return (paper_info[0], e, self.base_url, [])
