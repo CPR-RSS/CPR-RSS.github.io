@@ -65,7 +65,7 @@ def main(args):
     paper_list = parse_paper_list(parser, args)
     parser.cook_paper(paper_list[0])
     cooked_paper_list = []
-    for paper in tqdm.tqdm(paper_list[:10]):
+    for paper in tqdm.tqdm(paper_list):
         cooked_paper_list.append(parser.cook_paper(paper))
     
     web_page = generate_rss_page(cooked_paper_list, args)
