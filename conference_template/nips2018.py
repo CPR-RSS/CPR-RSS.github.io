@@ -42,13 +42,19 @@ class PaperListParser(BasePaperListParser):
         print("Parse NeurIPS2018, spotlight: %d, Oral: %d, Poster: %d, Overall: %d " \
                 % (spotlight, oral, poster, overall))
         return paper_list
-    
+    def text_process(self, text):
+        text = text.replace('&', "&amp;")
+        text = text.replace("<", "&lt;")
+        text = text.replace('>', "&gt;")
+        text = text.replace("'", "&apos;")
+        text = text.replace('"', "&quot;")
+        return text
     def cook_paper(self, paper_info):
         try:
             page_content = urlopen(paper_info[1]).read().decode('utf8')
             soup = BeautifulSoup(page_content, features="html.parser")
-            author_list = [x.get_text() for x in soup.select('li.author')]
-            abstract = soup.select('p.abstract')[0].get_text()
+            author_list = [self.text_process(x.get_text()) for x in soup.select('li.author')]
+            abstract = self.text_process(soup.select('p.abstract')[0].get_text())
             pdf_url = self.website_url +  next(filter(lambda x: '[PDF]' in x.get_text(), soup.select('a'))).get('href')
             return (paper_info[0], abstract, pdf_url, author_list)
         except Exception as e:
