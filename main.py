@@ -50,7 +50,7 @@ def generate_rss_page(cooked_paper_list, args):
 </item>
     """
     for paper in cooked_paper_list:
-        page += template % (paper[0], paper[1], paper[2])
+        page += template % (paper[0], paper[2], paper[1])
     return page + "</channel>"
 
 
