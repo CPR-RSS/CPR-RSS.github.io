@@ -39,6 +39,7 @@ def generate_rss_page(cooked_paper_list, args):
     page = """<?xml version="1.0" encoding="utf8"?>
 <rss version="2.0">
 <channel>
+    <title>nips2018</title>
     """
 
     template = """
@@ -68,7 +69,7 @@ def main(args):
         cooked_paper_list.append(parser.cook_paper(paper))
     
     web_page = generate_rss_page(cooked_paper_list, args)
-    with open('rss_source/' + args.conference + '.rss', 'w', encoding='utf8') as f:
+    with open('rss_source/' + args.conference + '.xml', 'w', encoding='utf8') as f:
         f.write(web_page)
 
 if __name__ == "__main__":
