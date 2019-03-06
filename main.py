@@ -36,8 +36,7 @@ def generate_web_page(cooked_paper_list, args):
     return page + "</body></html>"
 
 def generate_rss_page(cooked_paper_list, args):
-    page = """
-<?xml version="1.0" encoding="utf8"?>
+    page = """<?xml version="1.0" encoding="utf8"?>
 <rss version="2.0">
 <channel>
     """
