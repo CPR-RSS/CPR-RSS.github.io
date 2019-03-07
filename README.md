@@ -2,7 +2,7 @@
 
 ## Usage
 
-This is a simple repo for improving conference paper reading experience. We try to parse the paper information(title, abstract, url) to all the paper for a certain conference and generate an rss xml file.
+This is a simple repo for improving conference paper reading experience. We try to parse the paper information(title, abstract, url) to all the papers for a certain conference and generate an rss xml file.
 
 ### rss source
 Use any rss reading client to subscribe to the following rss source.
