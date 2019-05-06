@@ -10,7 +10,7 @@ Use any rss reading client to subscribe to the following rss source.
 
 ## Update plan
 
-* [ ] the support of rss source for cvpr (iccv), eccv (they maybe need a pdf-parser to extract the abstract), ICML, ICLR will be added recently.
+* [x] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
 * [ ] the support of generating pdf file instead of xml file will be added recently. 
 * [ ] the support of AAAI, ICJAI, KDD and other top conferences (would need to parse dblp), will be added after 1 and 2.
 * [ ] a simple webpage would also be considered if this repo is still alive then.
