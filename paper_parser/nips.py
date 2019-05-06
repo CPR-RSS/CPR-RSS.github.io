@@ -38,11 +38,11 @@ class PaperListParser(BasePaperListParser):
                 url = container.select('a.href_PDF')[0].get('href')
                 assert "Paper" in container.select('a.href_PDF')[0].get_text()
                 paper_list.append((title, url))
-            except:
+            except Exception as e:
                 faild += 1
                 # print("Paper [%s] does not have a related url" % title)
                 pass
-        print("Parse NeurIPS2018, spotlight: %d, Oral: %d, Poster: %d, Overall: %d, faild: %d " \
+        print("Parse NIPS; spotlight: %d, Oral: %d, Poster: %d, Overall: %d, faild: %d " \
                 % (spotlight, oral, poster, overall, faild))
         return paper_list
 
