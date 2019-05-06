@@ -6,8 +6,13 @@ This is a simple repo for improving conference paper reading experience. We try 
 
 ### rss source
 Use any rss reading client (Leaf in Mac) to subscribe to the following rss source.
-1. NIPS2018: https://conference-paper-rss.github.io/rss_source/nips2018.xml
-
+> Currently, we parse papers from the most recent 2 years. earlier years are not included (but you can run our code to parse it by yourself).
++ NIPS:
+  + https://conference-paper-rss.github.io/rss_source/nips2018.xml
+  + https://conference-paper-rss.github.io/rss_source/nips2017.xml
++ CVPR (**note that CVPR2019 has not released official paperlist**):
+  + https://conference-paper-rss.github.io/rss_source/cvpr2018.xml
+  + https://conference-paper-rss.github.io/rss_source/cvpr2017.xml
 ## Update (Plan)
 
 * [ ] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
