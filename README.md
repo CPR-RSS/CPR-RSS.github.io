@@ -11,7 +11,7 @@ Use any rss reading client to subscribe to the following rss source.
 ## Update plan
 
 * [ ] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently (update: 2019/05/06).
-  * [x] cvpr(iccv, eccv);  (update: 2019/05/06).
+  * [x] cvpr(iccv, eccv);  \[update: 2019/05/06\].
   * [ ] ICML
   * [ ] ICLR
 * [ ] the support of generating pdf file instead of xml file will be added recently. 
