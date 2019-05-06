@@ -6,7 +6,7 @@ This is a simple repo for improving conference paper reading experience. We try 
 
 ### rss source
 Use any rss reading client (Leaf in Mac) to subscribe to the following rss source.
-> Currently, we parse papers from the most recent 2 years. earlier years are not included.
+> Currently, we parse papers from the most recent 2 years. earlier years are not included (but you can run our code to parse it by yourself).
 + NIPS:
   + https://conference-paper-rss.github.io/rss_source/nips2018.xml
   + https://conference-paper-rss.github.io/rss_source/nips2017.xml
