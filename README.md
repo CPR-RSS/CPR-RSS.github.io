@@ -10,6 +10,11 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss sourc
 + NIPS:
   + https://conference-paper-rss.github.io/rss_source/nips2018.xml
   + https://conference-paper-rss.github.io/rss_source/nips2017.xml
++ ICML:
+  + https://conference-paper-rss.github.io/rss_source/icml2018.xml
++ ICLR:
+  + https://conference-paper-rss.github.io/rss_source/iclr2019.xml
+  + https://conference-paper-rss.github.io/rss_source/iclr2018.xml
 + CVPR (**note that cvpr2019 has not released official paperlist**):
   + https://conference-paper-rss.github.io/rss_source/cvpr2018.xml
   + https://conference-paper-rss.github.io/rss_source/cvpr2017.xml
@@ -17,12 +22,13 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss sourc
   + https://conference-paper-rss.github.io/rss_source/eccv2018.xml
 + ICCV:
   + https://conference-paper-rss.github.io/rss_source/iccv2017.xml
+
 ## Update (Plan)
 
-* [ ] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
+* [x] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
   * [x] cvpr(iccv, eccv);  \[update: 2019/05/06\].
-  * [ ] ICML
-  * [ ] ICLR
+  * [x] ICML
+  * [x] ICLR
 * [ ] a wiki page for usage.
 * [ ] the support of generating pdf file instead of xml file will be added recently.
 * [ ] the support of AAAI, ICJAI, KDD and other top conferences (would need to parse dblp), will be added after 1 and 2.
