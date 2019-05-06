@@ -1,8 +1,9 @@
 # conference-paper-rss
 
+This is a simple repo for improving conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an rss xml file. You can subscribe our resource to read papers with your **PC/PAD/PHONE** as long as you have an RSS reader on it.
+
 ## Usage
 
-This is a simple repo for improving conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an rss xml file.
 You can use **any RSS reader** to subscribe our resource. In Mac, we recommend using [Leaf](https://itunes.apple.com/cn/app/leaf-rss-%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8/id576338668?mt=12), which should look like follows:
 ### First, subscribe the resource:
 
