@@ -5,7 +5,7 @@
 This is a simple repo for improving conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an rss xml file.
 
 ### rss source
-Use any rss reading client to subscribe to the following rss source.
+Use any rss reading client (Leaf in Mac) to subscribe to the following rss source.
 1. NIPS2018: https://conference-paper-rss.github.io/rss_source/nips2018.xml
 
 ## Update
