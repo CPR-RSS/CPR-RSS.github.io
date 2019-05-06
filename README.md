@@ -37,8 +37,8 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   * [x] cvpr(iccv, eccv);  \[update: 2019/05/06\].
   * [x] ICML
   * [x] ICLR
-* [ ] a wiki page for usage.
-* [ ] the support of generating pdf file instead of xml file will be added recently.
+* [ ] a wiki page for usage; **windows** rss reader recommendation.
+* [ ] the support of generating **pdf**/**webpage** file instead of xml file will be added recently.
 * [ ] the support of ACL, AAAI, ICJAI, KDD and other top conferences (would need to parse dblp), will be added after 1 and 2.
 * [ ] a simple webpage would also be considered if this repo is still alive then.
 
