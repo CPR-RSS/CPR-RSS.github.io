@@ -25,8 +25,8 @@ def generate_rss_page(cooked_paper_list, args):
     page = """<?xml version="1.0" encoding="utf8"?>
 <rss version="2.0">
 <channel>
-    <title>nips2018</title>
-    """
+    <title>%s %s</title>
+    """ % (args.conference, args.year)
 
     template = """
     <item>
