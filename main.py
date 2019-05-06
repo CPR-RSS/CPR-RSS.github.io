@@ -16,7 +16,7 @@ def main(args):
     # second, we parse and generate a paper list containing paper information
     paper_list = _parser.parse_paper_list(args)
 
-    # Third, parser detail paper information one by one (Considering multiprocessing)
+    # Third, parser detail paper information one by one (Considering multiprocessing; do not want to)
     cooked_paper_list = []
     for paper in tqdm.tqdm(paper_list):
         cooked_paper_list.append(_parser.cook_paper(paper))

@@ -36,14 +36,15 @@ class PaperListParser(BasePaperListParser):
             try:
                 title = container.select('div.maincardBody')[0].get_text() + suffix
                 url = container.select('a.href_PDF')[0].get('href')
-                assert "Paper" in container.select('a.href_PDF')[0].get_text()
+                # assert "PDF" in container.select('a.href_PDF')[0].get_text()
                 paper_list.append((title, url))
             except Exception as e:
+                print(e)
                 faild += 1
                 # print("Paper [%s] does not have a related url" % title)
                 pass
-        print("Parse NIPS; spotlight: %d, Oral: %d, Poster: %d, Overall: %d, faild: %d " \
-                % (spotlight, oral, poster, overall, faild))
+        print("Parse %s; spotlight: %d, Oral: %d, Poster: %d, Overall: %d, faild: %d " \
+                % (self.base_url, spotlight, oral, poster, overall, faild))
         return paper_list
 
     def cook_paper(self, paper_info):

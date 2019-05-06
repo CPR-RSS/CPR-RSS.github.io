@@ -38,7 +38,6 @@ class PaperListParser(BasePaperListParser):
             author_list = soup.select('#authors >b >i')[0].get_text().split(',')
             author_list = [self.text_process(x) for x in author_list]
             abstract = self.text_process(soup.select('#abstract')[0].get_text())
-            # import pdb; pdb.set_trace()
             pdf_url = self.website_url +  next(filter(lambda x: 'pdf' in x.get_text(), soup.select('a'))).get('href')
             return Paper(self.text_process(paper_info[0]), abstract, pdf_url, author_list)
         except Exception as e:
