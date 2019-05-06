@@ -8,7 +8,7 @@ This is a simple repo for improving conference paper reading experience. We try 
 Use any rss reading client (Leaf in Mac) to subscribe to the following rss source.
 1. NIPS2018: https://conference-paper-rss.github.io/rss_source/nips2018.xml
 
-## Update
+## Update (Plan)
 
 * [ ] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
   * [x] cvpr(iccv, eccv);  \[update: 2019/05/06\].
