@@ -10,6 +10,9 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss sourc
 + NIPS:
   + https://conference-paper-rss.github.io/rss_source/nips2018.xml
   + https://conference-paper-rss.github.io/rss_source/nips2017.xml
++ CVPR (**note that cvpr2019 has not released official paperlist**):
+  + https://conference-paper-rss.github.io/rss_source/cvpr2018.xml
+  + https://conference-paper-rss.github.io/rss_source/cvpr2017.xml
 + ECCV:
   + https://conference-paper-rss.github.io/rss_source/eccv2018.xml
 + ICCV:
