@@ -30,7 +30,7 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 + ICCV:
   + https://conference-paper-rss.github.io/rss_source/iccv2017.xml
 + Arxiv:
-  + I also upload my [Leaf subscription](https://github.com/conference-paper-rss/conference-paper-rss.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your leaf).
+  + I also upload my [Leaf subscription](https://github.com/conference-paper-rss/conference-paper-rss.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
 ## Update (Plan)
 
 * [x] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
