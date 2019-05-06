@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.0">
+    <head>Leaf Subscriptions</head>
+    <body>
+        <outline title="iclr 2019" xmlUrl="https://conference-paper-rss.github.io/rss_source/iclr2019.xml" type="rss" text="iclr 2019"/>
+        <outline title="nips 2017" xmlUrl="https://conference-paper-rss.github.io/rss_source/nips2017.xml" type="rss" text="nips 2017"/>
+        <outline title="nips2018" xmlUrl="https://conference-paper-rss.github.io/rss_source/nips2018.xml" type="rss" text="nips2018"/>
+        <outline title="arxiv">
+            <outline title="cs.AI" xmlUrl="http://arxiv.org/rss/cs.AI" type="rss" text="cs.AI"/>
+            <outline title="cs.CL" xmlUrl="http://arxiv.org/rss/cs.CL" type="rss" text="cs.CL"/>
+            <outline title="cs.CV" xmlUrl="http://arxiv.org/rss/cs.CV" type="rss" text="cs.CV"/>
+            <outline title="cs.LG" xmlUrl="http://arxiv.org/rss/cs.LG" type="rss" text="cs.LG"/>
+            <outline title="cs.MM" xmlUrl="http://arxiv.org/rss/cs.MM" type="rss" text="cs.MM"/>
+        </outline>
+    </body>
+</opml>
