@@ -3,14 +3,15 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import tqdm
 
-from conference_template import BasePaperListParser, Paper
+from paper_parser import BasePaperListParser, Paper
 
 
 class PaperListParser(BasePaperListParser):
 
     def __init__(self, args):
-        self.base_url = "https://nips.cc/Conferences/2018/Schedule"
+        self.base_url = "https://nips.cc/Conferences/%s/Schedule" % (args.year)
         self.website_url = "http://papers.nips.cc"
+
     def parse(self, html_soup):
         all_container = html_soup.select("div.maincard")
         paper_list = []
@@ -18,6 +19,7 @@ class PaperListParser(BasePaperListParser):
         oral = 0
         poster = 0
         overall = 0
+        faild = 0
         for container in tqdm.tqdm(all_container):
             suffix = ""
             if "Spotlight" in container.get('class'):
@@ -37,18 +39,13 @@ class PaperListParser(BasePaperListParser):
                 assert "Paper" in container.select('a.href_PDF')[0].get_text()
                 paper_list.append((title, url))
             except:
+                faild += 1
                 # print("Paper [%s] does not have a related url" % title)
                 pass
-        print("Parse NeurIPS2018, spotlight: %d, Oral: %d, Poster: %d, Overall: %d " \
-                % (spotlight, oral, poster, overall))
+        print("Parse NeurIPS2018, spotlight: %d, Oral: %d, Poster: %d, Overall: %d, faild: %d " \
+                % (spotlight, oral, poster, overall, faild))
         return paper_list
-    def text_process(self, text):
-        text = text.replace('&', "&amp;")
-        text = text.replace("<", "&lt;")
-        text = text.replace('>', "&gt;")
-        text = text.replace("'", "&apos;")
-        text = text.replace('"', "&quot;")
-        return text
+
     def cook_paper(self, paper_info):
         try:
             page_content = urlopen(paper_info[1]).read().decode('utf8')
@@ -56,7 +53,7 @@ class PaperListParser(BasePaperListParser):
             author_list = [self.text_process(x.get_text()) for x in soup.select('li.author')]
             abstract = self.text_process(soup.select('p.abstract')[0].get_text())
             pdf_url = self.website_url +  next(filter(lambda x: '[PDF]' in x.get_text(), soup.select('a'))).get('href')
-            return (self.text_process(paper_info[0]), abstract, pdf_url, author_list)
+            return Paper(self.text_process(paper_info[0]), abstract, pdf_url, author_list)
         except Exception as e:
             print(e)
             return (paper_info[0], e, self.base_url, [])
