@@ -3,7 +3,7 @@
 ## Usage
 
 This is a simple repo for improving conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an rss xml file.
-![leaf-sub.gif](leaf-sub.gif =1080px)
+![leaf-sub.gif](leaf-sub.gif =1080x)
 ![rss-example.gif](rss-example.gif)
 ### rss source
 Use any rss reading client (Leaf in Mac) to subscribe to the following rss source.
