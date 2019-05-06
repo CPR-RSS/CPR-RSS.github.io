@@ -11,7 +11,8 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss sourc
   + https://conference-paper-rss.github.io/rss_source/nips2018.xml
   + https://conference-paper-rss.github.io/rss_source/nips2017.xml
 + CVPR:
-  + TODO
+  + https://conference-paper-rss.github.io/rss_source/cvpr2018.xml
+  + https://conference-paper-rss.github.io/rss_source/cvpr2017.xml
 ## Update (Plan)
 
 * [ ] the support of rss source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
