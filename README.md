@@ -1,6 +1,6 @@
 # conference-paper-rss
 
-This is a simple repo for improving conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an rss xml file. You can subscribe our resource to read papers with your **PC/PAD/PHONE** as long as you have an RSS reader on it.
+This is a simple repo for improving (**computer science**) conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an rss xml file. You can subscribe our resource to read papers with your **PC/PAD/PHONE** as long as you have an RSS reader on it.
 
 ## Usage
 
