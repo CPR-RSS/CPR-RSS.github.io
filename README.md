@@ -4,7 +4,7 @@ This is a simple repo for improving (**computer science**) conference paper read
 
 ## Usage
 
-You can use **any RSS reader** to subscribe our resource. In Mac, we recommend using [Leaf](https://itunes.apple.com/cn/app/leaf-rss-%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8/id576338668?mt=12) (**NOTE: Outlook is also a great choice**), which should look like follows:
+You can use **any RSS reader** to subscribe our resource. In Mac, we recommend using [Leaf](https://itunes.apple.com/cn/app/leaf-rss-%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8/id576338668?mt=12) (**NOTE: most of emails also support RSS subscription, just Goole it**), which should look like follows:
 ### First, subscribe the resource:
 
 ![leaf-sub.gif](leaf-sub.gif)
