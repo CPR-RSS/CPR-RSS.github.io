@@ -43,7 +43,6 @@ class PaperListParser(object):
 			author_list = [self.text_process(x) for x in author_list]
 			return Paper(self.text_process(title), abstract, pdf_url, author_list)
 		except Exception as e:
-			print(e)
 			return (paper_info[0], e, self.base_url, [])
 
 	@staticmethod
