@@ -7,6 +7,7 @@ from paper_parser import Paper
 class PaperListParser(object):
 	def __init__(self, args):
 		self.base_url = "https://www.isca-speech.org/archive/Interspeech_%s/" % (args.year)
+		self.year = args.year
 
 	def parse_paper_list(self, args):
 		base_url = self.base_url
@@ -36,7 +37,11 @@ class PaperListParser(object):
 			abstract = re.search(r"<p>([^<]+)</p>", abstract_page).group(1)
 			abstract = self.text_process(abstract)
 
-			pdf_url = self.base_url + "pdfs/" + str(idx) + ".pdf"
+			if self.year == '2018':
+				pdf_suffix = '.pdf'
+			else:
+				pdf_suffix = '.PDF'
+			pdf_url = self.base_url + "pdfs/" + str(idx) + pdf_suffix
 
 			author_list = re.search(r"<h4 class=\"w3-center\">([^\n]+)</h4>", abstract_page).group(1)
 			author_list = author_list.split(',')
