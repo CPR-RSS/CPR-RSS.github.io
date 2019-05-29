@@ -33,7 +33,7 @@ class PaperListParser(object):
 			idx = paper_info[1]
 			abstract_url = self.base_url + "abstracts/" + str(idx) + ".html"
 			abstract_page = urlopen(abstract_url).read().decode('utf8')
-			abstract = re.search(r"<p>([^\n]+)</p>", abstract_page).group(1)
+			abstract = re.search(r"<p>([^<]+)</p>", abstract_page).group(1)
 			abstract = self.text_process(abstract)
 
 			pdf_url = self.base_url + "pdfs/" + str(idx) + ".pdf"
