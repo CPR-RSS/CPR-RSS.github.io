@@ -31,8 +31,8 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 + ICCV:
   + https://conference-paper-rss.github.io/rss_source/iccv2017.xml
 + interspeech
-  + https://conference-paper-rss.github.io/rss_source/interspeech.xml
-  + https://conference-paper-rss.github.io/rss_source/interspeech.xml
+  + https://conference-paper-rss.github.io/rss_source/interspeech2017.xml
+  + https://conference-paper-rss.github.io/rss_source/interspeech2018.xml
 + arXiv:
   + I also upload my [arXiv Leaf subscription](https://github.com/conference-paper-rss/conference-paper-rss.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
 ## Update (Plan)
