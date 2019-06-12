@@ -2,9 +2,8 @@ from __future__ import print_function
 from urllib.request import urlopen
 import re
 import tqdm
-from paper_parser import Paper
-
-class PaperListParser(object):
+from paper_parser import Paper, BasePaperListParser
+class PaperListParser(BasePaperListParser):
 	def __init__(self, args):
 		self.base_url = "https://www.isca-speech.org/archive/Interspeech_%s/" % (args.year)
 		self.year = args.year
@@ -49,12 +48,3 @@ class PaperListParser(object):
 			return Paper(self.text_process(title), abstract, pdf_url, author_list)
 		except Exception as e:
 			return (paper_info[0], e, self.base_url, [])
-
-	@staticmethod
-	def text_process(text):
-		text = text.replace('&', "&amp;")
-		text = text.replace("<", "&lt;")
-		text = text.replace('>', "&gt;")
-		text = text.replace("'", "&apos;")
-		text = text.replace('"', "&quot;")
-		return text

@@ -30,6 +30,7 @@ class BasePaperListParser(object):
         text = text.replace('>', "&gt;")
         text = text.replace("'", "&apos;")
         text = text.replace('"', "&quot;")
+        text = text.replace('', '[UNKNOWN]')
         return text
 
 Paper = namedtuple('Paper', ['title', 'abstract', 'pdf_url', 'author_list'])
