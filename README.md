@@ -23,7 +23,8 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 + ICLR:
   + https://conference-paper-rss.github.io/rss_source/iclr2019.xml
   + https://conference-paper-rss.github.io/rss_source/iclr2018.xml
-+ CVPR (**note that cvpr2019 has not released official paperlist**):
++ CVPR:
+  + https://conference-paper-rss.github.io/rss_source/cvpr2019.xml
   + https://conference-paper-rss.github.io/rss_source/cvpr2018.xml
   + https://conference-paper-rss.github.io/rss_source/cvpr2017.xml
 + ECCV:
@@ -45,7 +46,7 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 * [ ] the support of generating **pdf**/**webpage** file instead of xml file will be added recently.
 * [ ] the support of ACL, AAAI, ICJAI, KDD and other top conferences (would need to parse dblp), will be added after 1 and 2.
 * [ ] a simple webpage would also be considered if this repo is still alive then.
-
+* [ ] considering add arXiv parser to parse new conference paper from arXiv (*e.g.*, those marked with 'accepted by CVPR 2020')
 
 ## Other
 
