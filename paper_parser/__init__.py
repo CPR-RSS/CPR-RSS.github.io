@@ -16,9 +16,10 @@ class BasePaperListParser(object):
         raise NotImplementedError()
 
     def parse_paper_list(self, args):
-
         base_url = self.base_url
+        print(base_url)        
         content = urlopen(base_url).read().decode('utf8')
+        print(content)        
         soup = BeautifulSoup(content, features="html.parser")
         paper_list = self.parse(soup)
         return paper_list
