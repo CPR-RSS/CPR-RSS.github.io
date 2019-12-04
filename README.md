@@ -19,6 +19,7 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   + https://conference-paper-rss.github.io/rss_source/nips2018.xml
   + https://conference-paper-rss.github.io/rss_source/nips2017.xml
 + ICML:
+  + https://conference-paper-rss.github.io/rss_source/icml2019.xml
   + https://conference-paper-rss.github.io/rss_source/icml2018.xml
 + ICLR:
   + https://conference-paper-rss.github.io/rss_source/iclr2019.xml
