@@ -6,7 +6,6 @@ import tqdm
 import generator
 
 def main(args):
-
     # first, we construct a paper parser
     try:
         _parser = importlib.import_module("paper_parser.%s" % args.conference).PaperListParser(args)
