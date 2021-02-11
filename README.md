@@ -1,4 +1,4 @@
-# conference-paper-rss
+# paper-gem
 
 This is a simple repo for improving (**computer science**) conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an RSS XML file. You can subscribe our resource to read papers with your **PC/PAD/PHONE** as long as you have an RSS reader on it.
 
@@ -16,31 +16,31 @@ You can use **any RSS reader** to subscribe our resource. In Mac, we recommend u
 Use any rss reading client (Leaf in Mac) to subscribe to the following rss resource.
 > Currently, we parse papers from the most recent 2 years. earlier years are not included (but you can run our code to parse it by yourself).
 + NIPS:
-  + https://conference-paper-rss.github.io/rss_source/nips2019.xml
-  + https://conference-paper-rss.github.io/rss_source/nips2018.xml
-  + https://conference-paper-rss.github.io/rss_source/nips2017.xml
+  + https://paper-gem.github.io/rss_source/nips2019.xml
+  + https://paper-gem.github.io/rss_source/nips2018.xml
+  + https://paper-gem.github.io/rss_source/nips2017.xml
 + ICML:
-  + https://conference-paper-rss.github.io/rss_source/icml2019.xml
-  + https://conference-paper-rss.github.io/rss_source/icml2018.xml
+  + https://paper-gem.github.io/rss_source/icml2019.xml
+  + https://paper-gem.github.io/rss_source/icml2018.xml
 + ICLR:
-  + https://conference-paper-rss.github.io/rss_source/iclr2020.xml
-  + https://conference-paper-rss.github.io/rss_source/iclr2019.xml
-  + https://conference-paper-rss.github.io/rss_source/iclr2018.xml
+  + https://paper-gem.github.io/rss_source/iclr2020.xml
+  + https://paper-gem.github.io/rss_source/iclr2019.xml
+  + https://paper-gem.github.io/rss_source/iclr2018.xml
 + CVPR:
-  + https://conference-paper-rss.github.io/rss_source/cvpr2020.xml
-  + https://conference-paper-rss.github.io/rss_source/cvpr2019.xml
-  + https://conference-paper-rss.github.io/rss_source/cvpr2018.xml
-  + https://conference-paper-rss.github.io/rss_source/cvpr2017.xml
+  + https://paper-gem.github.io/rss_source/cvpr2020.xml
+  + https://paper-gem.github.io/rss_source/cvpr2019.xml
+  + https://paper-gem.github.io/rss_source/cvpr2018.xml
+  + https://paper-gem.github.io/rss_source/cvpr2017.xml
 + ECCV:
-  + https://conference-paper-rss.github.io/rss_source/eccv2018.xml
+  + https://paper-gem.github.io/rss_source/eccv2018.xml
 + ICCV:
-  + https://conference-paper-rss.github.io/rss_source/iccv2019.xml
-  + https://conference-paper-rss.github.io/rss_source/iccv2017.xml
+  + https://paper-gem.github.io/rss_source/iccv2019.xml
+  + https://paper-gem.github.io/rss_source/iccv2017.xml
 + interspeech(@[charlesliucn](https://github.com/charlesliucn))
-  + https://conference-paper-rss.github.io/rss_source/interspeech2017.xml
-  + https://conference-paper-rss.github.io/rss_source/interspeech2018.xml
+  + https://paper-gem.github.io/rss_source/interspeech2017.xml
+  + https://paper-gem.github.io/rss_source/interspeech2018.xml
 + arXiv:
-  + I also upload my [arXiv Leaf subscription](https://github.com/conference-paper-rss/conference-paper-rss.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
+  + I also upload my [arXiv Leaf subscription](https://github.com/paper-gem/paper-gem.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
 ## Update (Plan)
 
 * [x] the support of RSS source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
@@ -55,7 +55,7 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 
 ## Other
 
-1. call for new names(the title `conference-paper-rss' is not very attractive).
+1. call for new names(the title `paper-gem' is not very attractive).
 2. call for proposals (any suggestion for new conferences, or other interesting functions.)
 3. call for pulls of other conference.
 
