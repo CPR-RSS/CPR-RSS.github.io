@@ -62,4 +62,11 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 ---
 
 ## Update
-### 2021.2.11
+### 2021.2.11 update plan
+
+1. rename and reconstruct this repo
+2. renaming: find new name for this repo;
+3. reconstructing: build parser template based on different website rather than conference.
+4. more works:
+  1. build the website;
+  2. generate the lda wordcloud.
