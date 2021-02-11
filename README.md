@@ -55,6 +55,11 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 
 ## Other
 
-1. call for new name s(the title `conference-paper-rss' is not very attractive).
+1. call for new names(the title `conference-paper-rss' is not very attractive).
 2. call for proposals (any suggestion for new conferences, or other interesting functions.)
 3. call for pulls of other conference.
+
+---
+
+## Update
+### 2021.2.11
