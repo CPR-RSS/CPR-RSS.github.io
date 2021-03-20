@@ -1,4 +1,4 @@
-# paper-gem
+# Conference Paper Reading RSS.
 
 This is a simple repo for improving (**computer science**) conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an RSS XML file. You can subscribe our resource to read papers with your **PC/PAD/PHONE** as long as you have an RSS reader on it.
 
@@ -57,7 +57,8 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 
 1. call for proposals (any suggestion for new conferences, or other interesting functions.)
 2. call for pulls of other conference.
-
+3. pull request: (please make sure that your pull requests meet the following requirement)
+  1. satisfies the [python style guide](https://www.python.org/dev/peps/pep-0008/) (The only exception is the Maximum Line Length. In this project, the maximum line length is 100 rather than 80.)
 ---
 
 ## Update
