@@ -16,29 +16,29 @@ You can use **any RSS reader** to subscribe our resource. In Mac, we recommend u
 Use any rss reading client (Leaf in Mac) to subscribe to the following rss resource.
 > Currently, we parse papers from the most recent 2 years. earlier years are not included (but you can run our code to parse it by yourself).
 + NIPS:
-  + https://paper-gem.github.io/rss_source/nips2019.xml
-  + https://paper-gem.github.io/rss_source/nips2018.xml
-  + https://paper-gem.github.io/rss_source/nips2017.xml
+  + https://CPR-RSS.github.io/rss_source/nips2019.xml
+  + https://CPR-RSS.github.io/rss_source/nips2018.xml
+  + https://CPR-RSS.github.io/rss_source/nips2017.xml
 + ICML:
-  + https://paper-gem.github.io/rss_source/icml2019.xml
-  + https://paper-gem.github.io/rss_source/icml2018.xml
+  + https://CPR-RSS.github.io/rss_source/icml2019.xml
+  + https://CPR-RSS.github.io/rss_source/icml2018.xml
 + ICLR:
-  + https://paper-gem.github.io/rss_source/iclr2020.xml
-  + https://paper-gem.github.io/rss_source/iclr2019.xml
-  + https://paper-gem.github.io/rss_source/iclr2018.xml
+  + https://CPR-RSS.github.io/rss_source/iclr2020.xml
+  + https://CPR-RSS.github.io/rss_source/iclr2019.xml
+  + https://CPR-RSS.github.io/rss_source/iclr2018.xml
 + CVPR:
-  + https://paper-gem.github.io/rss_source/cvpr2020.xml
-  + https://paper-gem.github.io/rss_source/cvpr2019.xml
-  + https://paper-gem.github.io/rss_source/cvpr2018.xml
-  + https://paper-gem.github.io/rss_source/cvpr2017.xml
+  + https://CPR-RSS.github.io/rss_source/cvpr2020.xml
+  + https://CPR-RSS.github.io/rss_source/cvpr2019.xml
+  + https://CPR-RSS.github.io/rss_source/cvpr2018.xml
+  + https://CPR-RSS.github.io/rss_source/cvpr2017.xml
 + ECCV:
-  + https://paper-gem.github.io/rss_source/eccv2018.xml
+  + https://CPR-RSS.github.io/rss_source/eccv2018.xml
 + ICCV:
-  + https://paper-gem.github.io/rss_source/iccv2019.xml
-  + https://paper-gem.github.io/rss_source/iccv2017.xml
+  + https://CPR-RSS.github.io/rss_source/iccv2019.xml
+  + https://CPR-RSS.github.io/rss_source/iccv2017.xml
 + interspeech(@[charlesliucn](https://github.com/charlesliucn))
-  + https://paper-gem.github.io/rss_source/interspeech2017.xml
-  + https://paper-gem.github.io/rss_source/interspeech2018.xml
+  + https://CPR-RSS.github.io/rss_source/interspeech2017.xml
+  + https://CPR-RSS.github.io/rss_source/interspeech2018.xml
 + arXiv:
   + I also upload my [arXiv Leaf subscription](https://github.com/paper-gem/paper-gem.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
 ## Update (Plan)
