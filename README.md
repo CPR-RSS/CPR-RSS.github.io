@@ -73,8 +73,8 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 
 ### reconstruction
 
-* [] https://www.thecvf.com/ (for cvpr / iccv / eccv)
-* [] http://proceedings.mlr.press/
-* [] https://proceedings.neurips.cc/ (for nips / neurips)
-* [] https://openreview.net/ (for those open-reviewed paper)
-* [] arxiv rss dynamic parser (TODO)
+* [ ] https://www.thecvf.com/ (for cvpr / iccv / eccv)
+* [ ] http://proceedings.mlr.press/
+* [ ] https://proceedings.neurips.cc/ (for nips / neurips)
+* [ ] https://openreview.net/ (for those open-reviewed paper)
+* [ ] arxiv rss dynamic parser (TODO)
