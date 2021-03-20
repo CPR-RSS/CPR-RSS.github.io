@@ -3,48 +3,50 @@ from urllib.request import urlopen
 import re
 import tqdm
 from paper_parser import Paper, BasePaperListParser
+
+
 class PaperListParser(BasePaperListParser):
-	def __init__(self, args):
-		self.base_url = "https://www.isca-speech.org/archive/Interspeech_%s/" % (args.year)
-		self.year = args.year
+    def __init__(self, args):
+        self.base_url = "https://www.isca-speech.org/archive/Interspeech_%s/" % (args.year)
+        self.year = args.year
 
-	def parse_paper_list(self, args):
-		base_url = self.base_url
-		content = urlopen(base_url).read().decode('utf8')
-		papers = re.findall(r"<p><a class=\"w3-text\"[^\n]+<br>", content)
+    def parse_paper_list(self, args):
+        base_url = self.base_url
+        content = urlopen(base_url).read().decode('utf8')
+        papers = re.findall(r"<p><a class=\"w3-text\"[^\n]+<br>", content)
 
-		overall = 0
-		failed = 0
-		paper_list = []
-		for paper in tqdm.tqdm(papers):
-			try:
-				title = re.search(r'\">([^\n]+)</a', paper).group(1)
-				idx = re.search(r'href=\"abstracts/(\d+)\.html\"', paper).group(1)
-				paper_list.append((title, idx))
-				overall += 1
-			except:
-				failed += 1
-		print("Parse %s; Overall: %d, faild: %d " % (self.base_url, overall, failed))
-		return paper_list
+        overall = 0
+        failed = 0
+        paper_list = []
+        for paper in tqdm.tqdm(papers):
+            try:
+                title = re.search(r'\">([^\n]+)</a', paper).group(1)
+                idx = re.search(r'href=\"abstracts/(\d+)\.html\"', paper).group(1)
+                paper_list.append((title, idx))
+                overall += 1
+            except Exception:
+                failed += 1
+        print("Parse %s; Overall: %d, faild: %d " % (self.base_url, overall, failed))
+        return paper_list
 
-	def cook_paper(self, paper_info):
-		try:
-			title = paper_info[0]
-			idx = paper_info[1]
-			abstract_url = self.base_url + "abstracts/" + str(idx) + ".html"
-			abstract_page = urlopen(abstract_url).read().decode('utf8')
-			abstract = re.search(r"<p>([^<]+)</p>", abstract_page).group(1)
-			abstract = self.text_process(abstract)
+    def cook_paper(self, paper_info):
+        try:
+            title = paper_info[0]
+            idx = paper_info[1]
+            abstract_url = self.base_url + "abstracts/" + str(idx) + ".html"
+            abstract_page = urlopen(abstract_url).read().decode('utf8')
+            abstract = re.search(r"<p>([^<]+)</p>", abstract_page).group(1)
+            abstract = self.text_process(abstract)
 
-			if self.year == '2018':
-				pdf_suffix = '.pdf'
-			else:
-				pdf_suffix = '.PDF'
-			pdf_url = self.base_url + "pdfs/" + str(idx) + pdf_suffix
+            if self.year == '2018':
+                pdf_suffix = '.pdf'
+            else:
+                pdf_suffix = '.PDF'
+            pdf_url = self.base_url + "pdfs/" + str(idx) + pdf_suffix
 
-			author_list = re.search(r"<h4 class=\"w3-center\">([^\n]+)</h4>", abstract_page).group(1)
-			author_list = author_list.split(',')
-			author_list = [self.text_process(x) for x in author_list]
-			return Paper(self.text_process(title), abstract, pdf_url, author_list)
-		except Exception as e:
-			return (paper_info[0], e, self.base_url, [])
+            author_list = re.search(r"<h4 class=\"w3-center\">([^\n]+)</h4>", abstract_page).group(1)
+            author_list = author_list.split(',')
+            author_list = [self.text_process(x) for x in author_list]
+            return Paper(self.text_process(title), abstract, pdf_url, author_list)
+        except Exception as e:
+            return (paper_info[0], e, self.base_url, [])

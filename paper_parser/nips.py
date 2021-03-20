@@ -53,7 +53,7 @@ class PaperListParser(BasePaperListParser):
             soup = BeautifulSoup(page_content, features="html.parser")
             author_list = [self.text_process(x.get_text()) for x in soup.select('li.author')]
             abstract = self.text_process(soup.select('p.abstract')[0].get_text())
-            pdf_url = self.website_url +  next(filter(lambda x: '[PDF]' in x.get_text(), soup.select('a'))).get('href')
+            pdf_url = self.website_url + next(filter(lambda x: '[PDF]' in x.get_text(), soup.select('a'))).get('href')
             return Paper(self.text_process(paper_info[0]), abstract, pdf_url, author_list)
         except Exception as e:
             print(e)

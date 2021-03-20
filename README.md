@@ -55,18 +55,25 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 
 ## Other
 
-1. call for new names(the title `paper-gem' is not very attractive).
-2. call for proposals (any suggestion for new conferences, or other interesting functions.)
-3. call for pulls of other conference.
+1. call for proposals (any suggestion for new conferences, or other interesting functions.)
+2. call for pulls of other conference.
 
 ---
 
 ## Update
 ### 2021.2.11 update plan
 
-1. rename and reconstruct this repo
-2. renaming: find new name for this repo;
-3. reconstructing: build parser template based on different website rather than conference.
-4. more works:
-  1. build the website;
-  2. generate the lda wordcloud.
+* [x] rename and reconstruct this repo
+* [x] renaming: find new name for this repo;
+* reconstructing: build parser template based on different website rather than conference.
+* more works:
+  * build the website;
+  * generate the lda wordcloud.
+
+### reconstruction
+
+* [] https://www.thecvf.com/ (for cvpr / iccv / eccv)
+* [] http://proceedings.mlr.press/
+* [] https://proceedings.neurips.cc/ (for nips / neurips)
+* [] https://openreview.net/ (for those open-reviewed paper)
+* [] arxiv rss dynamic parser (TODO)

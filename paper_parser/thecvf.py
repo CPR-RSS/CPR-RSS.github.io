@@ -3,13 +3,13 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import tqdm
 
-from paper_parser import BasePaperListParser, Paper
+from .paper_parser import BaseParser, Paper
 
 
-class PaperListParser(BasePaperListParser):
+class TheCVFParser(BaseParser):
 
     def __init__(self, args):
-        self.base_url = "http://openaccess.thecvf.com/CVPR%s.py" % (args.year)
+        self.base_url = "http://openaccess.thecvf.com/%s%s.py" % (args.conference, args.year)
         self.website_url = "http://openaccess.thecvf.com/"
 
     def parse(self, html_soup):
@@ -38,7 +38,8 @@ class PaperListParser(BasePaperListParser):
             author_list = soup.select('#authors >b >i')[0].get_text().split(',')
             author_list = [self.text_process(x) for x in author_list]
             abstract = self.text_process(soup.select('#abstract')[0].get_text())
-            pdf_url = self.website_url + next(filter(lambda x: 'pdf' in x.get_text(), soup.select('a'))).get('href')
+            pdf_url = self.website_url + \
+                next(filter(lambda x: 'pdf' in x.get_text(), soup.select('a'))).get('href')
             return Paper(self.text_process(paper_info[0]), abstract, pdf_url, author_list)
         except Exception as e:
             print(e)

@@ -21,6 +21,7 @@ def generate_web_page(cooked_paper_list, args):
         page += template % (paper[0], ', '.join(paper[3]), paper[2], paper[2], paper[1])
     return page + "</body></html>"
 
+
 def generate_rss_page(cooked_paper_list, args):
     page = """<?xml version="1.0" encoding="utf8"?>
 <rss version="2.0">

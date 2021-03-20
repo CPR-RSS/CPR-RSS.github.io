@@ -13,6 +13,7 @@ class PaperListParser:
         for func in ['parse','parse_paper_list','cook_paper']:
             setattr(self,func,getattr(self.worker,func))
     
+
 class PaperListParserCC(PaperListParser):
     def __init__(self, args):
         super().__init__(args)
@@ -45,6 +46,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from tqdm import tqdm
+
+
 def read_page(url,delay=30):
     print('reading page ... {} max timeout = {}'.format(url,delay))
     browser = webdriver.Chrome(ChromeDriverManager().install())  
@@ -57,11 +60,14 @@ def read_page(url,delay=30):
     page=browser.page_source
     browser.close()
     return page
+
+
 class PaperListParserOPEN(BasePaperListParser):
     def __init__(self, args):
         ts=['poster','spotlight','talk']
         self.base_urls = ["https://openreview.net/group?id=ICLR.cc/{}/Conference#accept-{}".format(args.year,t) for t in ts]
         self.website_url = "https://openreview.net"
+    
     def getinfo(self,d):
         author=d.select('div.note-authors')[0].get_text().strip()
         title=d.select('h4')[0].get_text().strip()
@@ -80,6 +86,7 @@ class PaperListParserOPEN(BasePaperListParser):
             page=read_page(url)
             paper_list.extend(self.parse(BeautifulSoup(page,features="html.parser")))
         return paper_list
+    
     def parse(self, soup):
         table_contents=soup.select('.tab-content')[0].select('div[class="tab-pane fade active in"]')
         lis=table_contents[0].select('li.note')
