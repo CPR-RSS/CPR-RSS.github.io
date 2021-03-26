@@ -9,36 +9,17 @@ from bs4 import BeautifulSoup
 from .base import BaseParser, Paper
 
 
-class CVFParser(BaseParser):
+class ECVAParser(BaseParser):
 
     def __init__(self, args):
         if args.conference.lower() == 'iccv':
             assert args.year % 2 == 1, "ICCV holds at odd years."
-        self.base_url = "http://openaccess.thecvf.com/%s%d" % (args.conference.upper(), args.year)
-        self.website_url = "http://openaccess.thecvf.com/"
-
-    def parse_paper_list(self, args):
-        base_url = self.base_url
-        if args.year < 2018:  # before 2018, those pages are organized locally
-            return super().parse_paper_list(args)
-
-        print("Parsing:" + base_url)
-        _content = requests.get(base_url).content.decode('utf-8')
-        found_urls = [self.website_url + dda.get('href')
-                      for dda in BeautifulSoup(_content, features='html.parser').select("dd >a")]
-        contents = [requests.get(url).content.decode('utf-8') for url in found_urls]
-        paper_list = []
-        parse_log = defaultdict(lambda: 0)
-        print("Found the following containers:")
-        for url, content in zip(found_urls, contents):
-            soup = BeautifulSoup(content, features="html.parser")
-            lists, log = self.parse(soup, url)
-            paper_list.extend(lists)
-            parse_log = {key: parse_log[key] + log[key] for key in log}
-        print("{url}, Overall: {overall}, failed: {failed} ".format(url=self.base_url, **parse_log))
-        return paper_list
+        self.re_format = "eccv_%d" % args.year
+        self.website_url = "https://www.ecva.net/"
+        self.base_url = "https://www.ecva.net/papers.php"
 
     def parse(self, html_soup, url=None):
+        # import pdb; pdb.set_trace()
         all_container = html_soup.select("dt.ptitle")
         paper_list = []
         overall = 0
@@ -47,8 +28,9 @@ class CVFParser(BaseParser):
             try:
                 title = container.select('a')[0].get_text()
                 url = container.select('a')[0].get('href')
-                paper_list.append((title, url))
-                overall += 1
+                if self.re_format in url:
+                    paper_list.append((title, url))
+                    overall += 1
             except Exception as e:
                 print("Line (%d): %s" % (sys._getframe().f_lineno, str(e)))
                 failed += 1
@@ -63,7 +45,7 @@ class CVFParser(BaseParser):
             author_list = soup.select('#authors >b >i')[0].get_text().split(',')
             author_list = [self.text_process(x) for x in author_list]
             abstract = self.text_process(soup.select('#abstract')[0].get_text())
-            pdf_url = '%s%s'.format(
+            pdf_url = '{}{}'.format(
                 self.website_url,
                 next(filter(lambda x: 'pdf' in x.get_text(), soup.select('a'))).get('href')
             )
@@ -72,4 +54,4 @@ class CVFParser(BaseParser):
             import traceback
             traceback.print_exc()
             print("Line (%d): %s" % (sys._getframe().f_lineno, str(e)))
-            return (paper_info[0], e, self.base_url, [])
+            return (paper_info[0], e, self.website_url, [])

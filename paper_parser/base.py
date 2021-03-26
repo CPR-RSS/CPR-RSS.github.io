@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+import requests
 from collections import namedtuple
 
-from urllib.request import urlopen
+
 from bs4 import BeautifulSoup
 
 
@@ -16,9 +18,10 @@ class BaseParser:
     def parse_paper_list(self, args):
         base_url = self.base_url
         print(base_url)
-        content = urlopen(base_url).read()
+        content = requests.get(base_url).text
         soup = BeautifulSoup(content, features="html.parser")
-        paper_list = self.parse(soup)
+        paper_list, parse_log = self.parse(soup)
+        print("{url}, Overall: {overall}, failed: {failed} ".format(url=self.base_url, **parse_log))
         return paper_list
 
     @staticmethod
@@ -28,8 +31,10 @@ class BaseParser:
         text = text.replace('>', "&gt;")
         text = text.replace("'", "&apos;")
         text = text.replace('"', "&quot;")
-        text = text.replace('', '[UNKNOWN]')
         text = text.replace("’", "'")
+        text = text.replace('', '')
+        text = text.replace('', '')
+        text = text.replace('', '')
         return text
 
 

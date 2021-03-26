@@ -1,13 +1,21 @@
-from .thecvf import TheCVFParser
-from .mlr import  MlrParser
+from .thecvf import CVFParser
+from .mlr import MLRParser
+from .ecva import ECVAParser
 
 
 def get_parser(args):
-    if args.conference.lowercase() in ['cvpr', 'iccv', 'eccv']:
-        return TheCVFParser(args)
-    elif args.conference.lowercase() in ['nips',]:
+    if args.conference.lower() in ['cvpr', 'iccv']:
+        assert (args.year % 2 == 1) and args.conference.lower() == 'iccv', \
+            "ICCV only holds in odd years (Got: %d)" % args.year
+        return CVFParser(args)
+    elif args.conference.lower() == 'eccv':
+        assert args.year % 2 == 0, "ECCV only holds in even years (Got: %d)" % args.year
+        return CVFParser(args) if args.year < 2018 else ECVAParser(args)
+    elif args.conference.lower() in ['nips', 'neurips']:
         return None
-    elif args.conference.lowercase() in ['icml']:
-        return MlrParser(args)
+    elif args.conference.lower() in ['icml']:
+        return MLRParser(args)
+    elif args.conference.lower() == 'iclr':
+        return None
     else:
-        raise Exception('unknown conference: %s'.format(args.conference))
+        raise Exception('unknown conference: {}'.format(args.conference))

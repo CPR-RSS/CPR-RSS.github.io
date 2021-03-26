@@ -1,4 +1,3 @@
-
 def generate_web_page(cooked_paper_list, args):
     page = """
 <!DOCTYPE html>
