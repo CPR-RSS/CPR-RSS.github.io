@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import re
 import requests
 from collections import namedtuple
 
@@ -32,9 +33,20 @@ class BaseParser:
         text = text.replace("'", "&apos;")
         text = text.replace('"', "&quot;")
         text = text.replace("’", "'")
-        text = text.replace('', '')
-        text = text.replace('', '')
-        text = text.replace('', '')
+        # re.sub(u"[\x01-\x1f|\x22|\x26|\x27|\x2f|\x3c|\x3e]+",u"",sourceString)
+        # text = text.replace("{", '(')
+        # text = text.replace('}', ')')
+        text = re.sub('[^!-~]+', ' ', text).strip()
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
+        # text = text.replace('', ' ')
         return text
 
 

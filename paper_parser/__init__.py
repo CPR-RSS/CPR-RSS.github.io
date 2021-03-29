@@ -1,6 +1,7 @@
 from .thecvf import CVFParser
 from .mlr import MLRParser
 from .ecva import ECVAParser
+from .openreview import OpenreviewParser
 
 
 def get_parser(args):
@@ -16,6 +17,6 @@ def get_parser(args):
     elif args.conference.lower() in ['icml']:
         return MLRParser(args)
     elif args.conference.lower() == 'iclr':
-        return None
+        return OpenreviewParser(args)
     else:
         raise Exception('unknown conference: {}'.format(args.conference))
