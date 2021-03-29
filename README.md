@@ -20,6 +20,7 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   + https://CPR-RSS.github.io/rss_source/nips2018.xml
   + https://CPR-RSS.github.io/rss_source/nips2017.xml
 + ICML:
+  + https://CPR-RSS.github.io/rss/icml2020.xml
   + https://CPR-RSS.github.io/rss_source/icml2019.xml
   + https://CPR-RSS.github.io/rss_source/icml2018.xml
 + ICLR:
