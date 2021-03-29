@@ -33,6 +33,7 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   + https://CPR-RSS.github.io/rss_source/cvpr2018.xml
   + https://CPR-RSS.github.io/rss_source/cvpr2017.xml
 + ECCV:
+  + https://CPR-RSS.github.io/rss/eccv2020.xml
   + https://CPR-RSS.github.io/rss_source/eccv2018.xml
 + ICCV:
   + https://CPR-RSS.github.io/rss_source/iccv2019.xml
