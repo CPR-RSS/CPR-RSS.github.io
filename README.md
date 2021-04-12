@@ -5,6 +5,7 @@ This is a simple repo for improving (**computer science**) conference paper read
 ## Usage
 
 You can use **any RSS reader** to subscribe our resource. In Mac, we recommend using [Leaf](https://itunes.apple.com/cn/app/leaf-rss-%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8/id576338668?mt=12)(**NOTE: most of the emails also support RSS subscription, just Goole it**. btw, use [feedDemon](http://www.feeddemon.com/) for windows as suggested by [charlesliucn](https://github.com/charlesliucn)). If you are using Leaf, it should look like follows:
+
 ### First, subscribe to the resource:
 
 ![leaf-sub.gif](leaf-sub.gif)
@@ -43,6 +44,15 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   + https://CPR-RSS.github.io/rss/interspeech2018.xml
 + arXiv:
   + I also upload my [arXiv Leaf subscription](https://github.com/paper-gem/paper-gem.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
+
+## Dependency
+The whole repo is buipt on `python3`. In this section, we introduce how to run this code locally. This code mainly depends on `requests`, and [`selenium`](https://www.selenium.dev/documentation/en/webdriver/). Most of the dependencies in this project could be installed via `pip`, except that `selenium`  furtherly requires install an extra webdriver (`chromedriver` as in the code).
+
+To run the cod, following the following command:
+```shell
+python3 main.py -c CONFERENCENAME -y YEAR
+```
+
 ## Update (Plan)
 
 * [x] the support of RSS source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
@@ -64,6 +74,7 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
 ---
 
 ## Update
+
 ### 2021.2.11 update plan
 
 * [x] rename and reconstruct this repo
