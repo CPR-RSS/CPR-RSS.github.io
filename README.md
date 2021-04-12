@@ -47,24 +47,12 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   + I also upload my [arXiv Leaf subscription](https://github.com/paper-gem/paper-gem.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
 
 ## Dependency
-The whole repo is buipt on `python3`. In this section, we introduce how to run this code locally. This code mainly depends on `requests`, and [`selenium`](https://www.selenium.dev/documentation/en/webdriver/). Most of the dependencies in this project could be installed via `pip`, except that `selenium`  furtherly requires install an extra webdriver (`chromedriver` as in the code).
+The whole repo is built on `python3`. In this section, we introduce how to run this code locally. This code mainly depends on `requests`, and [`selenium`](https://www.selenium.dev/documentation/en/webdriver/). Most of the dependencies in this project could be installed via `pip`, except that `selenium`  furtherly requires installing an extra webdriver (`chromedriver` as in the code. You have to install the webdriver locally and put it into your system path).
 
 To run the cod, following the following command:
 ```shell
 python3 main.py -c CONFERENCENAME -y YEAR
 ```
-
-## Update (Plan)
-
-* [x] the support of RSS source for cvpr (iccv), eccv, ICML, ICLR will be added recently.
-  * [x] cvpr(iccv, eccv);  \[update: 2019/05/06\].
-  * [x] ICML
-  * [x] ICLR
-* [ ] a wiki page for usage; **windows** rss reader recommendation.
-* [ ] the support of generating **pdf**/**webpage** file instead of xml file will be added recently.
-* [ ] the support of ACL, AAAI, ICJAI, KDD and other top conferences (would need to parse dblp), will be added after 1 and 2.
-* [ ] a simple webpage would also be considered if this repo is still alive then.
-* [ ] considering add arXiv parser to parse new conference paper from arXiv (*e.g.*, those marked with 'accepted by CVPR 2020')
 
 ## Other
 
@@ -80,16 +68,16 @@ python3 main.py -c CONFERENCENAME -y YEAR
 
 * [x] rename and reconstruct this repo
 * [x] renaming: find new name for this repo;
-* reconstructing: build parser template based on different website rather than conference.
-* more works:
-  * build the website;
-  * generate the lda wordcloud.
+* [x]reconstructing: build parser template based on different website rather than conference.
+* [ ]more works:
+  * [ ] build the website;
+  * [ ] generate the lda wordcloud.
 
 ### reconstruction
 
-* [ ] https://www.thecvf.com/ (for cvpr / iccv)
-* [ ] https://www.ecva.net (for eccv)
-* [ ] http://proceedings.mlr.press/ (for icml)
+* [x] https://www.thecvf.com/ (for cvpr / iccv)
+* [x] https://www.ecva.net (for eccv)
+* [x] http://proceedings.mlr.press/ (for icml)
 * [ ] https://proceedings.neurips.cc/ (for nips / neurips)
-* [ ] https://openreview.net/ (for iclr)
+* [x] https://openreview.net/ (for iclr)
 * [ ] arxiv rss dynamic parser (TODO)

@@ -1,8 +1,5 @@
 import sys
-import requests
 from collections import defaultdict
-from soupsieve import select
-from soupsieve.util import lower
 
 import tqdm
 from selenium import webdriver
