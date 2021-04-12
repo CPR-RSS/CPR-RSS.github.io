@@ -20,7 +20,7 @@ def read_page(url, delay=30, signature='note'):
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('user-agent="MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"')
     chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--headless')
     chrome_options.add_argument('blink-settings=imagesEnabled=false')
     browser = webdriver.Chrome(chrome_options=chrome_options)
     browser.get(url)
@@ -38,11 +38,19 @@ def read_page(url, delay=30, signature='note'):
 class OpenreviewParser(BaseParser):
     def __init__(self, args):
         super().__init__(args)
-        self.category = ['poster', 'spotlight', 'talk']
-        self.base_urls = [
-            "https://openreview.net/group?id=ICLR.cc/{}/Conference#accept-{}".format(args.year, t)
-            for t in self.category
-        ]
+        if args.year < 2020:
+            self.category = ['poster', 'spotlight', 'talk']
+            self.base_urls = [
+                "https://openreview.net/group?id=ICLR.cc/{}/Conference#accept-{}".format(args.year, t)
+                for t in self.category
+            ]
+        else:
+            self.category = ['oral', 'spotlight', 'poster']
+            self.base_urls = [
+                "https://openreview.net/group?id=ICLR.cc/{}/Conference#{}-presentations".format(args.year, t)
+                for t in self.category
+            ]
+
         self.website_url = "https://openreview.net"
 
     def parse_paper_list(self, args):
