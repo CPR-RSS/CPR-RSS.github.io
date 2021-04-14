@@ -1,10 +1,10 @@
 # Conference Paper Reading RSS.
 
-This is a simple repo for improving (**computer science**) conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an RSS XML file. You can subscribe our resource to read papers with your **PC/PAD/PHONE** as long as you have an RSS reader on it.
+This is a simple repo for improving (**computer science**) conference paper reading experience. We try to parse the paper information(title, abstract, url) of all the papers for a certain conference and generate an RSS XML file. You can subscribe to our resource to read papers with your **PC/PAD/PHONE** as long as you have an RSS reader on it.
 
 ## Usage
 
-You can use **any RSS reader** to subscribe our resource. In Mac, we recommend using [Leaf](https://itunes.apple.com/cn/app/leaf-rss-%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8/id576338668?mt=12)(**NOTE: most of the emails also support RSS subscription, just Goole it**. btw, use [feedDemon](http://www.feeddemon.com/) for windows as suggested by [charlesliucn](https://github.com/charlesliucn)). If you are using Leaf, it should look like follows:
+You can use **any RSS reader** to subscribe to our resource. In Mac, we recommend using [Leaf](https://itunes.apple.com/cn/app/leaf-rss-%E6%96%B0%E9%97%BB%E9%98%85%E8%AF%BB%E5%99%A8/id576338668?mt=12)(**NOTE: most of the emails also support RSS subscription, just Goole it**. btw, use [feedDemon](http://www.feeddemon.com/) for windows as suggested by [charlesliucn](https://github.com/charlesliucn)). If you are using Leaf, it should look like follows:
 
 ### First, subscribe to the resource:
 
@@ -57,7 +57,7 @@ python3 main.py -c CONFERENCENAME -y YEAR
 ## Other
 
 1. call for proposals (any suggestion for new conferences, or other interesting functions.)
-2. call for pulls of other conference.
+2. call for pulls of other conferences.
 3. pull request: (please make sure that your pull requests meet the following requirement)
     1. satisfies the [python style guide](https://www.python.org/dev/peps/pep-0008/) (The only exception is the Maximum Line Length. In this project, the maximum line length is 100 rather than 80.)
 ---
@@ -68,8 +68,8 @@ python3 main.py -c CONFERENCENAME -y YEAR
 
 * [x] rename and reconstruct this repo
 * [x] renaming: find new name for this repo;
-* [x]reconstructing: build parser template based on different website rather than conference.
-* [ ]more works:
+* [x] reconstructing: build parser template based on different website rather than conference.
+* [ ] more works:
   * [ ] build the website;
   * [ ] generate the lda wordcloud.
 
