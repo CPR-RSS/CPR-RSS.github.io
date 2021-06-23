@@ -29,6 +29,10 @@ class CVFParser(BaseParser):
         contents = [requests.get(url).content.decode('utf-8') for url in found_urls]
         paper_list = []
         parse_log = defaultdict(lambda: 0)
+        found_all_container = sum(['all' in found_url.lower() for found_url in found_urls])
+        if found_all_container:
+            found_urls = found_urls[:-1]
+            contents = contents[:-1]
         print("Found the following containers:")
         for url, content in zip(found_urls, contents):
             soup = BeautifulSoup(content, features="html.parser")
