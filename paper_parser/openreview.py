@@ -3,6 +3,7 @@ from collections import defaultdict
 
 import tqdm
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -19,7 +20,8 @@ def read_page(url, delay=30, signature='note'):
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('blink-settings=imagesEnabled=false')
-    browser = webdriver.Chrome(chrome_options=chrome_options)
+    # Please use the correct chrome driver
+    browser = webdriver.Chrome(ChromeDriverManager(version="104.0.5112.79").install(), chrome_options=chrome_options)
     browser.get(url)
     try:
         _ = WebDriverWait(browser, delay).until(
