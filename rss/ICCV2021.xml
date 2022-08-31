@@ -5873,8 +5873,8 @@
     
     <item>
         <title>The Center of Attention: Center-Keypoint Grouping via Attention for Multi-Person Pose Estimation</title>
-        <link>http://openaccess.thecvf.com//content/ICCV2021/papers/Braso_The_Center_of_Attention_Center-Keypoint_Grouping_via_Attention_for_Multi-Person_ICCV_2021_paper.pdf</link>
-        <description>We introduce CenterGroup, an attention-based framework to estimate human poses from a set of identity-agnostic keypoints and person center predictions in an image. Our approach uses a transformer to obtain context-aware embeddings for all detected keypoints and centers and then applies multi-head attention to directly group joints into their corresponding person centers. While most bottom-up methods rely on non-learnable clustering at inference, CenterGroup uses a fully differentiable attention mechanism that we train end-to-end together with our keypoint detector. As a result, our method obtains state-of-the-art performance with up to 2.5x faster inference time than competing bottom-up methods.</description>
+        <link>http://openaccess.thecvf.com/ICCV2021</link>
+        <description>list index out of range</description>
     </item>
     
     <item>

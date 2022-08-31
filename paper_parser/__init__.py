@@ -16,8 +16,8 @@ def get_parser(args):
     elif args.conference.lower() in ['nips', 'neurips']:
         return None
     elif args.conference.lower() in ['icml']:
-        if args.year >= 2021:
-            return OpenreviewParser(args)
+        # if args.year >= 2021:
+        #     return OpenreviewParser(args)
         return MLRParser(args)
     elif args.conference.lower() == 'iclr':
         return OpenreviewParser(args)
