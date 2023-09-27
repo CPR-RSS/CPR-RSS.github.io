@@ -13,9 +13,13 @@ You can use **any RSS reader** to subscribe to our resource. In Mac, we recommen
 ### Second, enjoy reading:
 
 ![rss-example.gif](rss-example.gif)
+
 ### rss source
+
 Use any rss reading client (Leaf in Mac) to subscribe to the following rss resource.
+
 > Currently, we parse papers from the most recent 2 years. earlier years are not included (but you can run our code to parse it by yourself).
+
 + NIPS:
   + https://CPR-RSS.github.io/rss/nips2019.xml
   + https://CPR-RSS.github.io/rss/nips2018.xml
@@ -33,6 +37,8 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   + https://CPR-RSS.github.io/rss/iclr2019.xml
   + https://CPR-RSS.github.io/rss/iclr2018.xml
 + CVPR:
+  + https://CPR-RSS.github.io/rss/cvpr2023.xml
+  + https://CPR-RSS.github.io/rss/cvpr2022.xml
   + https://CPR-RSS.github.io/rss/cvpr2020.xml
   + https://CPR-RSS.github.io/rss/cvpr2019.xml
   + https://CPR-RSS.github.io/rss/cvpr2018.xml
@@ -50,9 +56,11 @@ Use any rss reading client (Leaf in Mac) to subscribe to the following rss resou
   + I also upload my [arXiv Leaf subscription](https://github.com/paper-gem/paper-gem.github.io/blob/master/Leaf%20Subscriptions.xml) for those lazy guys (Just import it in your Leaf client).
 
 ## Dependency
+
 The whole repo is built on `python3`. In this section, we introduce how to run this code locally. This code mainly depends on `requests`, and [`selenium`](https://www.selenium.dev/documentation/en/webdriver/). Most of the dependencies in this project could be installed via `pip`, except that `selenium`  furtherly requires installing an extra webdriver (`chromedriver` as in the code. You have to install the webdriver locally and put it into your system path).
 
 To run the cod, following the following command:
+
 ```shell
 python3 main.py -c CONFERENCENAME -y YEAR
 ```
@@ -62,25 +70,26 @@ python3 main.py -c CONFERENCENAME -y YEAR
 1. call for proposals (any suggestion for new conferences, or other interesting functions.)
 2. call for pulls of other conferences.
 3. pull request: (please make sure that your pull requests meet the following requirement)
-    1. satisfies the [python style guide](https://www.python.org/dev/peps/pep-0008/) (The only exception is the Maximum Line Length. In this project, the maximum line length is 100 rather than 80.)
+   1. satisfies the [python style guide](https://www.python.org/dev/peps/pep-0008/) (The only exception is the Maximum Line Length. In this project, the maximum line length is 100 rather than 80.)
+
 ---
 
 ## Update
 
 ### 2021.2.11 update plan
 
-* [x] rename and reconstruct this repo
-* [x] renaming: find new name for this repo;
-* [x] reconstructing: build parser template based on different website rather than conference.
+* [X] rename and reconstruct this repo
+* [X] renaming: find new name for this repo;
+* [X] reconstructing: build parser template based on different website rather than conference.
 * [ ] more works:
   * [ ] build the website;
   * [ ] generate the lda wordcloud.
 
 ### reconstruction
 
-* [x] https://www.thecvf.com/ (for cvpr / iccv)
-* [x] https://www.ecva.net (for eccv)
-* [x] http://proceedings.mlr.press/ (for icml)
+* [X] https://www.thecvf.com/ (for cvpr / iccv)
+* [X] https://www.ecva.net (for eccv)
+* [X] http://proceedings.mlr.press/ (for icml)
 * [ ] https://proceedings.neurips.cc/ (for nips / neurips)
-* [x] https://openreview.net/ (for iclr)
+* [X] https://openreview.net/ (for iclr)
 * [ ] arxiv rss dynamic parser (TODO)
