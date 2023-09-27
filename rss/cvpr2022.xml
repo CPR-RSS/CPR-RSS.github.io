@@ -1973,8 +1973,8 @@
     
     <item>
         <title>DR.VIC: Decomposition and Reasoning for Video Individual Counting</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Han_DR.VIC_Decomposition_and_Reasoning_for_Video_Individual_Counting_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70e0ccbbe0>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Han_DR.VIC_Decomposition_and_Reasoning_for_Video_Individual_Counting_CVPR_2022_paper.pdf</link>
+        <description>Pedestrian counting is a fundamental tool for understanding pedestrian patterns and crowd flow analysis. Existing works (e.g., image-level pedestrian counting, crossline crowd counting et al.) either only focus on the image-level counting or are constrained to the manual annotation of lines. In this work, we propose to conduct the pedestrian counting from a new perspective - Video Individual Counting (VIC), which counts the total number of individual pedestrians in the given video (a person is only counted once). Instead of relying on the Multiple Object Tracking (MOT) techniques, we propose to solve the problem by decomposing all pedestrians into the initial pedestrians who existed in the first frame and the new pedestrians with separate identities in each following frame. Then, an end-to-end Decomposition and Reasoning Network (DRNet) is designed to predict the initial pedestrian count with the density estimation method and reason the new pedestrian's count of each frame with the differentiable optimal transport. Extensive experiments are conducted on two datasets with congested pedestrians and diverse scenes, demonstrating the effectiveness of our method over baselines with great superiority in counting the individual pedestrians. Code: https://github.com/taohan10200/DRNet.</description>
     </item>
     
     <item>
@@ -3629,8 +3629,8 @@
     
     <item>
         <title>Multi-Object Tracking Meets Moving UAV</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Liu_Multi-Object_Tracking_Meets_Moving_UAV_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70e0a285b0>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Liu_Multi-Object_Tracking_Meets_Moving_UAV_CVPR_2022_paper.pdf</link>
+        <description>Multi-object tracking in unmanned aerial vehicle (UAV) videos is an important vision task and can be applied in a wide range of applications. However, conventional multi-object trackers do not work well on UAV videos due to the challenging factors of irregular motion caused by moving camera and view change in 3D directions. In this paper, we propose a UAVMOT network specially for multi-object tracking in UAV views. The UAVMOT introduces an ID feature update module to enhance the object's feature association. To better handle the complex motions under UAV views, we develop an adaptive motion filter module. In addition, a gradient balanced focal loss is used to tackle the imbalance categories and small objects detection problem. Experimental results on the VisDrone2019 and UAVDT datasets demonstrate that the proposed UAVMOT achieves considerable improvement against the state-of-the-art tracking methods on UAV videos.</description>
     </item>
     
     <item>
@@ -4703,8 +4703,8 @@
     
     <item>
         <title>Motion-Modulated Temporal Fragment Alignment Network for Few-Shot Action Recognition</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Wu_Motion-Modulated_Temporal_Fragment_Alignment_Network_for_Few-Shot_Action_Recognition_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70df862d60>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Wu_Motion-Modulated_Temporal_Fragment_Alignment_Network_for_Few-Shot_Action_Recognition_CVPR_2022_paper.pdf</link>
+        <description>While the majority of FSL models focus on image classification, the extension to action recognition is rather challenging due to the additional temporal dimension in videos. To address this issue, we propose an end-to-end Motion-modulated Temporal Fragment Alignment Network (MTFAN) by jointly exploring the task-specific motion modulation and the multi-level temporal fragment alignment for Few-Shot Action Recognition (FSAR). The proposed MTFAN model enjoys several merits. First, we design a motion modulator conditioned on the learned task-specific motion embeddings, which can activate the channels related to the task-shared motion patterns for each frame. Second, a segment attention mechanism is proposed to automatically discover the higher-level segments for multi-level temporal fragment alignment, which encompasses the frame-to-frame, segment-to-segment, and segment-to-frame alignments. To the best of our knowledge, this is the first work to exploit task-specific motion modulation for FSAR. Extensive experimental results on four standard benchmarks demonstrate that the proposed model performs favorably against the state-of-the-art FSAR methods.</description>
     </item>
     
     <item>
@@ -6137,8 +6137,8 @@
     
     <item>
         <title>Fairness-Aware Adversarial Perturbation Towards Bias Mitigation for Deployed Deep Models</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Wang_Fairness-Aware_Adversarial_Perturbation_Towards_Bias_Mitigation_for_Deployed_Deep_Models_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70df85aac0>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Fairness-Aware_Adversarial_Perturbation_Towards_Bias_Mitigation_for_Deployed_Deep_Models_CVPR_2022_paper.pdf</link>
+        <description>Prioritizing fairness is of central importance in artificial intelligence (AI) systems, especially for those societal applications, e.g., hiring systems should recommend applicants equally from different demographic groups, and risk assessment systems must eliminate racism in criminal justice. Existing efforts towards the ethical development of AI systems have leveraged data science to mitigate biases in the training set or introduced fairness principles into the training process. For a deployed AI system, however, it may not allow for retraining or tuning in practice. By contrast, we propose a more flexible approach, i.e., fairness-aware adversarial perturbation (FAAP), which learns to perturb input data to blind deployed models on fairness-related features, e.g., gender and ethnicity. The key advantage is that FAAP does not modify deployed models in terms of parameters and structures. To achieve this, we design a discriminator to distinguish fairness-related attributes based on latent representations from deployed models. Meanwhile, a perturbation generator is trained against the discriminator, such that no fairness-related features could be extracted from perturbed inputs. Exhaustive experimental evaluation demonstrates the effectiveness and superior performance of the proposed FAAP. In addition, FAAP is validated on real-world commercial deployments (inaccessible to model parameters), which shows the transferability of FAAP, foreseeing the potential of black-box adaptation.</description>
     </item>
     
     <item>
@@ -8273,8 +8273,8 @@
     
     <item>
         <title>Autoregressive Image Generation Using Residual Quantization</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Lee_Autoregressive_Image_Generation_Using_Residual_Quantization_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70de4c3df0>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Lee_Autoregressive_Image_Generation_Using_Residual_Quantization_CVPR_2022_paper.pdf</link>
+        <description>For autoregressive (AR) modeling of high-resolution images, vector quantization (VQ) represents an image as a sequence of discrete codes. A short sequence length is important for an AR model to reduce its computational costs to consider long-range interactions of codes. However, we postulate that previous VQ cannot shorten the code sequence and generate high-fidelity images together in terms of the rate-distortion trade-off. In this study, we propose the two-stage framework, which consists of Residual-Quantized VAE (RQ-VAE) and RQ-Transformer, to effectively generate high-resolution images. Given a fixed codebook size, RQ-VAE can precisely approximate a feature map of an image and represent the image as a stacked map of discrete codes. Then, RQ-Transformer learns to predict the quantized feature vector at the next position by predicting the next stack of codes. Thanks to the precise approximation of RQ-VAE, we can represent a 256x256 image as 8x8 resolution of the feature map, and RQ-Transformer can efficiently reduce the computational costs. Consequently, our framework outperforms the existing AR models on various benchmarks of unconditional and conditional image generation. Our approach also has a significantly faster sampling speed than previous AR models to generate high-quality images.</description>
     </item>
     
     <item>
@@ -10091,8 +10091,8 @@
     
     <item>
         <title>Exploring Structure-Aware Transformer Over Interaction Proposals for Human-Object Interaction Detection</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Zhang_Exploring_Structure-Aware_Transformer_Over_Interaction_Proposals_for_Human-Object_Interaction_Detection_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70e0d8c070>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_Exploring_Structure-Aware_Transformer_Over_Interaction_Proposals_for_Human-Object_Interaction_Detection_CVPR_2022_paper.pdf</link>
+        <description>Recent high-performing Human-Object Interaction (HOI) detection techniques have been highly influenced by Transformer-based object detector (i.e., DETR). Nevertheless, most of them directly map parametric interaction queries into a set of HOI predictions through vanilla Transformer in a one-stage manner. This leaves rich inter- or intra-interaction structure under-exploited. In this work, we design a novel Transformer-style HOI detector, i.e., Structure-aware Transformer over Interaction Proposals (STIP), for HOI detection. Such design decomposes the process of HOI set prediction into two subsequent phases, i.e., an interaction proposal generation is first performed, and then followed by transforming the non-parametric interaction proposals into HOI predictions via a structure-aware Transformer. The structure-aware Transformer upgrades vanilla Transformer by encoding additionally the holistically semantic structure among interaction proposals as well as the locally spatial structure of human/object within each interaction proposal, so as to strengthen HOI predictions. Extensive experiments conducted on V-COCO and HICO-DET benchmarks have demonstrated the effectiveness of STIP, and superior results are reported when comparing with the state-of-the-art HOI detectors. Source code is available at https://github.com/zyong812/STIP.</description>
     </item>
     
     <item>
@@ -10469,8 +10469,8 @@
     
     <item>
         <title>Exploring Endogenous Shift for Cross-Domain Detection: A Large-Scale Benchmark and Perturbation Suppression Network</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Tao_Exploring_Endogenous_Shift_for_Cross-Domain_Detection_A_Large-Scale_Benchmark_and_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70e0a28550>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Tao_Exploring_Endogenous_Shift_for_Cross-Domain_Detection_A_Large-Scale_Benchmark_and_CVPR_2022_paper.pdf</link>
+        <description>Existing cross-domain detection methods mostly study the domain shifts where differences between domains are often caused by external environment and perceivable for humans. However, in real-world scenarios (e.g., MRI medical diagnosis, X-ray security inspection), there still exists another type of shift, named endogenous shift, where the differences between domains are mainly caused by the intrinsic factors (e.g., imaging mechanisms, hardware components, etc.), and usually inconspicuous. This shift can also severely harm the cross-domain detection performance but has been rarely studied. To support this study, we contribute the first Endogenous Domain Shift (EDS) benchmark, X-ray security inspection, where the endogenous shifts among the domains are mainly caused by different X-ray machine types with different hardware parameters, wear degrees, etc. EDS consists of 14,219 images including 31,654 common instances from three domains (X-ray machines), with bounding-box annotations from 10 categories. To handle the endogenous shift, we further introduce the Perturbation Suppression Network (PSN), motivated by the fact that this shift is mainly caused by two types of perturbations: category-dependent and category-independent ones. PSN respectively exploits local prototype alignment and global adversarial learning mechanism to suppress these two types of perturbations. The comprehensive evaluation results show that PSN outperforms SOTA methods, serving a new perspective to the cross-domain research community.</description>
     </item>
     
     <item>
@@ -11195,8 +11195,8 @@
     
     <item>
         <title>Rethinking Minimal Sufficient Representation in Contrastive Learning</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Wang_Rethinking_Minimal_Sufficient_Representation_in_Contrastive_Learning_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70de60c280>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Rethinking_Minimal_Sufficient_Representation_in_Contrastive_Learning_CVPR_2022_paper.pdf2</link>
+        <description>Contrastive learning between different views of the data achieves outstanding success in the field of self-supervised representation learning and the learned representations are useful in broad downstream tasks. Since all supervision information for one view comes from the other view, contrastive learning approximately obtains the minimal sufficient representation which contains the shared information and eliminates the non-shared information between views. Considering the diversity of the downstream tasks, it cannot be guaranteed that all task-relevant information is shared between views. Therefore, we assume the non-shared task-relevant information cannot be ignored and theoretically prove that the minimal sufficient representation in contrastive learning is not sufficient for the downstream tasks, which causes performance degradation. This reveals a new problem that the contrastive learning models have the risk of over-fitting to the shared information between views. To alleviate this problem, we propose to increase the mutual information between the representation and input as regularization to approximately introduce more task-relevant information, since we cannot utilize any downstream task information during training. Extensive experiments verify the rationality of our analysis and the effectiveness of our method. It significantly improves the performance of several classic contrastive learning models in downstream tasks. Our code is available at https://github.com/Haoqing-Wang/InfoCL.</description>
     </item>
     
     <item>
@@ -11327,8 +11327,8 @@
     
     <item>
         <title>Privacy Preserving Partial Localization</title>
-        <link>http://openaccess.thecvf.com/CVPR2022</link>
-        <description>HTTPConnectionPool(host='openaccess.thecvf.com', port=80): Max retries exceeded with url: //content/CVPR2022/html/Geppert_Privacy_Preserving_Partial_Localization_CVPR_2022_paper.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f70dd370e80>: Failed to establish a new connection: [Errno 110] Connection timed out'))</description>
+        <link>https://openaccess.thecvf.com/content/CVPR2022/papers/Geppert_Privacy_Preserving_Partial_Localization_CVPR_2022_paper.pdf</link>
+        <description>Recently proposed privacy preserving solutions for cloud-based localization rely on lifting traditional point-based maps to randomized 3D line clouds. While the lifted representation is effective in concealing private information, there are two fundamental limitations. First, without careful construction of the line clouds, the representation is vulnerable to density-based inversion attacks. Secondly, after successful localization, the precise camera orientation and position is revealed to the server. However, in many scenarios, the pose itself might be sensitive information. We propose a principled approach overcoming these limitations, based on two observations. First, a full 6 DoF pose is not always necessary, and in combination with egomotion tracking even a one dimensional localization can reduce uncertainty and correct drift. Secondly, by lifting to parallel planes instead of lines, the map only provides partial constraints on the query pose, preventing the server from knowing the exact query location. If the client requires a full 6 DoF pose, it can be obtained by fusing the result from multiple queries, which can be temporally and spatially disjoint. We demonstrate the practical feasibility of this approach and show a small performance drop compared to both the conventional and privacy preserving approaches.</description>
     </item>
     
     <item>
